@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="frostStarIce" x1="14" y1="8" x2="52" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffef7"/><stop offset=".38" stop-color="#c8f5ff"/><stop offset=".72" stop-color="#b8b4ff"/><stop offset="1" stop-color="#fff0cf"/>
+    </linearGradient>
+    <linearGradient id="frostStarEdge" x1="12" y1="9" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff5d2"/><stop offset=".35" stop-color="#f7c9ef"/><stop offset=".68" stop-color="#ac9bff"/><stop offset="1" stop-color="#9cf2ff"/>
+    </linearGradient>
+    <radialGradient id="frostStarTile" cx="0" cy="0" r="1" gradientTransform="matrix(52 48 -52 56 8 5)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#304767"/><stop offset="1" stop-color="#151d35"/>
+    </radialGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="17" fill="url(#frostStarTile)" stroke="url(#frostStarEdge)" stroke-width="2"/>
+  <path d="M32 5.5 37.1 22 52.8 13.2 42 27.4 59 32 42 36.6 52.8 50.8 37.1 42 32 58.5 26.9 42 11.2 50.8 22 36.6 5 32 22 27.4 11.2 13.2 26.9 22Z" fill="url(#frostStarIce)" stroke="url(#frostStarEdge)" stroke-width="2.1" stroke-linejoin="round"/>
+  <path d="m32 15 3.5 12.5L48 32l-12.5 4.5L32 49l-3.5-12.5L16 32l12.5-4.5Z" fill="#f8fdff" fill-opacity=".42"/>
+  <path d="m32 15v34M16 32h32M20.7 20.7l22.6 22.6m0-22.6L20.7 43.3" stroke="#fff" stroke-opacity=".78" stroke-width="1.15" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="3.2" fill="#fff"/>
+</svg>
