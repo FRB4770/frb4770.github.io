@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#101f38"><meta name="description" content="FRB Alliance Command Center — guides, events and strategy for Whiteout Survival.">
+<meta name="theme-color" content="#0b1b2b"><meta name="description" content="FRB Alliance Command Center — guides, events and strategy for Whiteout Survival.">
 <title>FRB | Alliance Command Center</title>
 <style>
 :root{--bg:#071522;--panel:#10283d;--panel2:#15364f;--line:#2b526b;--ice:#c8efff;--blue:#70d2fa;--muted:#a1bdce;--white:#eff9ff;--gold:#f2d59b;--green:#8de0c0}
@@ -256,7 +256,7 @@ header{background:rgba(16,9,26,.96);border-bottom-color:#493457}
 </style>
 <style>
 .bear-card{background:linear-gradient(125deg,#29183c 0%,#20142f 65%,#302235 100%)!important;border-color:#795992!important}.bear-card .tag{color:#d9bdf0}.bear-card .timer{color:#f1e7ff}.bear-card small{color:#c6b8d2}.gift-preview{margin:18px 0}.gift-preview .sectionhead{margin:8px 0}.gift-stats{grid-template-columns:repeat(3,1fr);margin:15px 0}.gift-stats .timer{font-size:30px}.gift-code-card{min-height:0;padding:14px}.gift-code-text{font-size:20px;font-weight:850;letter-spacing:.08em;overflow-wrap:anywhere}.gift-meta{font-size:12px;color:var(--muted);line-height:1.5}.gift-history{font-size:12px}.gift-admin label{display:block}.gift-code-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}@media(max-width:720px){.gift-stats{grid-template-columns:1fr}}
-</style><link rel="icon" type="image/gif" href="assets/frb-logo.gif">
+</style><link rel="icon" type="image/gif" href="assets/frb-logo-blue-gold.gif">
 <style id="gift-center-original-frb-palette">
 #giftcenter .gift-info,#giftcenter .gift-maintainer-tools{background:linear-gradient(145deg,#261737,#1a1029);border-color:#58406f;box-shadow:0 8px 24px #08040d33}
 #giftcenter .gift-counts{color:#c0b3ce}
@@ -339,15 +339,253 @@ header nav #gtranslate_wrapper .gt_selector:hover,header nav #gtranslate_wrapper
 @media(max-width:700px){.frb-message-grid,.frb-sheet-grid{grid-template-columns:1fr}.frb-alliance-tools>summary{align-items:flex-start;flex-direction:column}.frb-alliance-tools>summary small{margin-left:0;text-align:left}}
 </style>
 <style id="frb-message-count-style">.frb-char-count{margin:5px 0 0;text-align:right;color:#bba9ca;font-size:11px}.frb-char-count.over-limit{color:#ff9a9a;font-weight:800}</style>
-</head>
+<style id="frostborn-winter-blue-refresh">
+/* Frostborn winter-blue refresh: retain the gold event frame language */
+:root{--bg:#091421;--panel:#14243a;--panel2:#1b304a;--line:#3c5876;--ice:#eaf4ff;--blue:#9ccaff;--muted:#a9bbcf;--white:#f5f8ff;--gold:#f2d17d;--green:#a8dfcb}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 50% -18%,rgba(91,145,199,.32),transparent 42%),radial-gradient(ellipse at 12% 18%,rgba(112,165,216,.10),transparent 34%),linear-gradient(180deg,#14263b 0%,#0c1928 48%,#08121d 100%)}
+header{background:rgba(9,20,34,.94);border-bottom-color:#344c68}
+.navbtn,.lang,.action{background:#172a41;border-color:#3a5675}
+.navbtn.active{background:#223d5d;outline-color:#a9cefa}
+.navbtn:hover,.action:hover{border-color:#a7c9ed;background:#254361}
+.hero{border-color:#627e9c;background:linear-gradient(125deg,#263f5c 0%,#192e48 60%,#122237 100%);box-shadow:0 18px 48px rgba(1,8,18,.48),0 0 28px rgba(138,188,235,.10)}
+.hero h1{color:#d9eaff;text-shadow:0 3px 22px rgba(151,194,239,.22)}
+.eyebrow,.tag{color:#a9cefa}
+.search{background:#0d1b2a;border-color:#536f8d}
+.card{background:linear-gradient(145deg,#1b2e44,#122235);border-color:#3c5876;box-shadow:0 8px 24px rgba(1,8,18,.22)}
+.card h3{color:#e2efff}
+.pill{background:#203751;border-color:#496783;color:#e0edfa}
+.notice{background:#172c43;border-color:#4c6987}
+.field{background:#0d1b2a;border-color:#405d7a}
+.card.svs-featured-card,.card.svs-event-card{position:relative;background:linear-gradient(145deg,#1d3046 0%,#142337 72%,#26303a 100%)!important;border:1px solid #c99d48!important;box-shadow:0 0 0 1px rgba(224,185,100,.22),0 12px 30px rgba(1,8,18,.35),0 0 24px rgba(202,157,72,.10)!important}
+.card.svs-featured-card:before,.card.svs-event-card:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#ffe7a0,#bd8b35,#ffe7a0)}
+.card.svs-featured-card .tag,.card.svs-event-card .tag{color:#f4d27e}
+.card.svs-featured-card h3,.card.svs-event-card h3{color:#fff0c5}
+.card.svs-featured-card .action,.card.svs-event-card .action{border-color:#bd8b3e;color:#fff1c9}
+@keyframes winterRiseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.hero{animation:winterRiseIn .7s ease-out both}
+main>.sectionhead,main>.grid,main>.primary-timers,main>.timer-grid{animation:winterRiseIn .65s ease-out both}
+.card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);border-color:#8eabc9}
+.card.svs-featured-card:hover,.card.svs-event-card:hover{border-color:#f0cf79!important}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #c4defa;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+
+<style id="homepage-server-timeline-styles">
+#home #homepage-server-timeline{--tl-blue:#173552;--tl-blue-2:#214968;--tl-blue-light:#9bc7f4;--tl-gold:#e7c77b;--tl-gold-bright:#f4d994;color:#edf5fc;margin:22px 0 34px}
+#homepage-server-timeline .timeline-panel{position:relative;overflow:hidden;padding:22px;border:1px solid #8d744a;border-radius:18px;background:linear-gradient(145deg,#142b43,#102238 70%,#132c44);box-shadow:0 14px 34px rgba(1,8,18,.34),inset 0 0 0 1px rgba(231,199,123,.10)}#homepage-server-timeline .timeline-panel:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#f4d994,#a98543,#f4d994)}
+#homepage-server-timeline .timeline-heading{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-bottom:5px}#homepage-server-timeline .timeline-heading h2{margin:0;color:#f5f8fc;font-size:clamp(22px,3vw,29px);letter-spacing:-.02em}#homepage-server-timeline .timeline-clock{font-size:23px;color:var(--tl-blue-light)}#homepage-server-timeline .timeline-day-badge{padding:5px 10px;border:1px solid #b18b4c;border-radius:7px;background:linear-gradient(135deg,#263d53,#253448);color:#f4d994;font-weight:850;font-size:13px}#homepage-server-timeline .timeline-subtitle{margin:0;color:#aebfd1;font-size:13px}
+#homepage-server-timeline .timeline-tools{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:17px 0 6px}#homepage-server-timeline .timeline-caveat{margin:0;color:#9eb3c8;font-size:12px}#homepage-server-timeline .timeline-date-control{display:flex;align-items:center;gap:8px;color:#c0cddd;font-size:12px}#homepage-server-timeline .timeline-date-control input{padding:7px 9px;border:1px solid #6b7d8d;border-radius:8px;background:#0c1d30;color:#edf5fc;font:inherit;color-scheme:dark}
+#homepage-server-timeline .timeline-scroll{overflow-x:auto;overscroll-behavior-x:contain;padding:13px 2px 12px;scrollbar-width:thin;scrollbar-color:#7188a0 #102238}#homepage-server-timeline .timeline-track{position:relative;display:flex;align-items:flex-start;min-width:max-content;padding:0 8px}#homepage-server-timeline .timeline-track:before{content:"";position:absolute;left:8px;right:8px;top:48px;height:4px;border-radius:99px;background:linear-gradient(90deg,#42678a,#c5a75e 48%,#6485a0);box-shadow:0 1px 6px rgba(231,199,123,.18)}
+#homepage-server-timeline .timeline-stop{position:relative;z-index:1;display:flex;flex:0 0 132px;flex-direction:column;align-items:center;gap:5px;padding:0 6px;border:0;background:none;color:#d2dfeb;cursor:pointer;text-align:center}#homepage-server-timeline .stop-day{font-size:11px;font-weight:850;letter-spacing:.02em;color:#dce9f6;white-space:nowrap}#homepage-server-timeline .stop-icon{display:grid;place-items:center;width:32px;height:32px;margin-top:1px;border:1px solid #c5a65e;border-radius:10px;background:linear-gradient(145deg,#294b69,#142c44);box-shadow:0 3px 9px #06111e99,inset 0 0 0 2px #e7c77b20;color:#f4d994;font-size:18px;line-height:1;transition:transform .18s ease,box-shadow .18s ease}#homepage-server-timeline .stop-dot{width:11px;height:11px;margin:2px 0;border:2px solid #e7c77b;border-radius:50%;background:#172d45;box-shadow:0 0 0 3px #142b43}#homepage-server-timeline .stop-label{max-width:120px;min-height:29px;color:#bfd0e0;font-size:10px;line-height:1.25}
+#homepage-server-timeline .timeline-stop:hover .stop-icon,#homepage-server-timeline .timeline-stop[aria-pressed="true"] .stop-icon{transform:translateY(-2px) scale(1.08);box-shadow:0 0 0 2px #e7c77b55,0 5px 13px #06111ecc}#homepage-server-timeline .timeline-stop[data-state="past"] .stop-dot{background:#e7c77b}#homepage-server-timeline .timeline-stop[data-state="current"] .stop-dot{background:#f4d994;box-shadow:0 0 0 5px #e7c77b44;transform:scale(1.15)}#homepage-server-timeline .timeline-stop[aria-pressed="true"] .stop-dot{background:#fff1c8;border-color:#bd994f;box-shadow:0 0 0 5px #e7c77b50}#homepage-server-timeline .timeline-stop:focus-visible{outline:2px solid #f4d994;outline-offset:3px;border-radius:9px}
+#homepage-server-timeline .timeline-current{position:absolute;z-index:2;top:42px;width:16px;height:16px;border:4px solid #f4d994;border-radius:50%;background:#132941;box-shadow:0 0 0 6px #e7c77b38;transform:translateX(-50%);pointer-events:none}#homepage-server-timeline .timeline-current-label{position:absolute;z-index:3;top:24px;transform:translate(-50%,-100%);padding:3px 6px;border:1px solid #b28e4f;border-radius:5px;background:#2a3949;color:#f4d994;font-size:10px;font-weight:850;white-space:nowrap;pointer-events:none}
+#homepage-server-timeline .timeline-detail{position:relative;isolation:isolate;overflow:hidden;min-height:108px;margin-top:10px;padding:16px 18px;border:1px solid #d0b16a;border-radius:12px;background:linear-gradient(120deg,#1b3652,#142a42 68%,#102238);box-shadow:inset 0 0 0 1px #e7c77b1a}#homepage-server-timeline .timeline-detail:after{content:attr(data-icon);position:absolute;z-index:-1;right:22px;top:50%;transform:translateY(-54%);font-size:82px;line-height:1;opacity:.12;filter:drop-shadow(0 2px 10px #e7c77b77);pointer-events:none}#homepage-server-timeline .detail-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}#homepage-server-timeline .detail-day{color:#f4d994;font-size:15px;font-weight:900}#homepage-server-timeline .detail-title{margin:0;color:#f5f8fc;font-size:16px}#homepage-server-timeline .timeline-detail p{position:relative;max-width:850px;margin:7px 0 0;color:#c0d0df;font-size:13px}#homepage-server-timeline .timeline-detail .detail-when{color:#f4d994;font-size:11px;font-weight:750}
+#homepage-server-timeline .timeline-legend{display:flex;gap:13px;flex-wrap:wrap;margin-top:11px;color:#afc1d2;font-size:10px}#homepage-server-timeline .timeline-legend span{display:inline-flex;align-items:center;gap:5px}#homepage-server-timeline .legend-dot{width:8px;height:8px;border:1px solid #e7c77b;border-radius:50%;background:#294b69}
+@media(max-width:650px){#home #homepage-server-timeline{margin:18px 0 26px}#homepage-server-timeline .timeline-panel{padding:16px}#homepage-server-timeline .timeline-stop{flex-basis:116px}#homepage-server-timeline .stop-label{max-width:104px}#homepage-server-timeline .timeline-tools{align-items:flex-start;flex-direction:column}#homepage-server-timeline .timeline-date-control{flex-wrap:wrap}#homepage-server-timeline .timeline-detail:after{right:8px;font-size:62px;opacity:.09}}@media(prefers-reduced-motion:reduce){#homepage-server-timeline .stop-icon{transition:none}}
+
+/* Unique gold edged seals and blue field treatments for every milestone */
+#homepage-server-timeline .timeline-stop[data-key="launch"] .stop-icon{border-radius:8px 8px 3px 3px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(31deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="launch"]{background:radial-gradient(circle at 10% 16%,#e7c77b24,transparent 18%),linear-gradient(120deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen2"] .stop-icon{border-radius:50% 50% 4px 4px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(58deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen2"]{background:radial-gradient(circle at 33% 45%,#e7c77b24,transparent 22%),linear-gradient(133deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="pet1"] .stop-icon{border-radius:45% 55% 40% 60%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(85deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet1"]{background:radial-gradient(circle at 56% 74%,#e7c77b24,transparent 26%),linear-gradient(146deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="fire-era"] .stop-icon{border-radius:50% 50% 6px 6px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(112deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fire-era"]{background:radial-gradient(circle at 79% 35%,#e7c77b24,transparent 30%),linear-gradient(159deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="svs-koi"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(139deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="svs-koi"]{background:radial-gradient(circle at 20% 64%,#e7c77b24,transparent 18%),linear-gradient(172deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="pet2"] .stop-icon{border-radius:42% 58% 50% 50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(166deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet2"]{background:radial-gradient(circle at 43% 25%,#e7c77b24,transparent 22%),linear-gradient(185deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen3"] .stop-icon{border-radius:50% 50% 50% 4px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(193deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen3"]{background:radial-gradient(circle at 66% 54%,#e7c77b24,transparent 26%),linear-gradient(198deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="pet3"] .stop-icon{border-radius:48% 52% 34% 66%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(220deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet3"]{background:radial-gradient(circle at 89% 83%,#e7c77b24,transparent 30%),linear-gradient(211deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="crystal-lab"] .stop-icon{border-radius:4px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(247deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="crystal-lab"]{background:radial-gradient(circle at 30% 44%,#e7c77b24,transparent 18%),linear-gradient(224deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="chief-gear"] .stop-icon{border-radius:50% 50% 8px 8px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(274deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="chief-gear"]{background:radial-gradient(circle at 53% 73%,#e7c77b24,transparent 22%),linear-gradient(237deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen4"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(301deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen4"]{background:radial-gradient(circle at 76% 34%,#e7c77b24,transparent 26%),linear-gradient(250deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="pet45"] .stop-icon{border-radius:42% 58% 48% 52%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(328deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet45"]{background:radial-gradient(circle at 17% 63%,#e7c77b24,transparent 30%),linear-gradient(263deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="war-academy"] .stop-icon{border-radius:5px 50% 5px 50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(355deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="war-academy"]{background:radial-gradient(circle at 40% 24%,#e7c77b24,transparent 18%),linear-gradient(276deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen5"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(22deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen5"]{background:radial-gradient(circle at 63% 53%,#e7c77b24,transparent 22%),linear-gradient(289deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="pet67"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(49deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet67"]{background:radial-gradient(circle at 86% 82%,#e7c77b24,transparent 26%),linear-gradient(302deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="fc68"] .stop-icon{border-radius:4px 12px 4px 12px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(76deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fc68"]{background:radial-gradient(circle at 27% 43%,#e7c77b24,transparent 30%),linear-gradient(315deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen6"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(103deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen6"]{background:radial-gradient(circle at 50% 72%,#e7c77b24,transparent 18%),linear-gradient(328deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen7"] .stop-icon{border-radius:50% 50% 4px 4px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(130deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen7"]{background:radial-gradient(circle at 73% 33%,#e7c77b24,transparent 22%),linear-gradient(341deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="fc910"] .stop-icon{border-radius:4px 50% 4px 50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(157deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fc910"]{background:radial-gradient(circle at 14% 62%,#e7c77b24,transparent 26%),linear-gradient(354deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen8"] .stop-icon{border-radius:50%;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(184deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen8"]{background:radial-gradient(circle at 37% 23%,#e7c77b24,transparent 30%),linear-gradient(7deg,#1d3a58,#142b43 69%,#102238)}
+#homepage-server-timeline .timeline-stop[data-key="gen9"] .stop-icon{border-radius:50% 50% 6px 6px;background:radial-gradient(circle at 28% 22%,#f4d99455,transparent 46%),linear-gradient(211deg,#2b506f,#132b44 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen9"]{background:radial-gradient(circle at 60% 52%,#e7c77b24,transparent 18%),linear-gradient(20deg,#1d3a58,#142b43 69%,#102238)}
+</style>
+
+<style id="homepage-server-timeline-gold-main">
+/* Gold is the primary timeline color; FRB blue carries the secondary details. */
+#home #homepage-server-timeline{--tl-blue:#244562;--tl-blue-2:#315879;--tl-blue-light:#9bc7f4;--tl-gold:#e8c878;--tl-gold-bright:#fff0bc;color:#1b3042}
+#homepage-server-timeline .timeline-panel{border:1px solid transparent;border-radius:18px;background:linear-gradient(135deg,#f0d58d 0%,#e8c878 42%,#d5b466 100%) padding-box,linear-gradient(112deg,#fff7d8 0%,#b58b3f 18%,#fff0b9 37%,#a67e37 57%,#fff7d8 76%,#c09a4e 100%) border-box;box-shadow:0 0 0 1px rgba(255,239,184,.48),0 0 15px rgba(232,200,120,.48),0 10px 34px rgba(1,8,18,.34),inset 0 1px 0 rgba(255,255,255,.56);transition:box-shadow .22s ease}
+#homepage-server-timeline .timeline-panel:hover{box-shadow:0 0 0 1px rgba(255,245,210,.8),0 0 22px rgba(232,200,120,.64),0 10px 34px rgba(1,8,18,.34),inset 0 1px 0 rgba(255,255,255,.72)}
+#homepage-server-timeline .timeline-panel:before{background:linear-gradient(180deg,#315879,#244562 52%,#9bc7f4);box-shadow:0 0 8px rgba(36,69,98,.5)}
+#homepage-server-timeline .timeline-heading h2{color:#172e43;text-shadow:0 1px rgba(255,255,255,.28)}#homepage-server-timeline .timeline-clock{color:#315879}
+#homepage-server-timeline .timeline-day-badge{background:linear-gradient(140deg,#315879,#1d3b57);border-color:#fff0bc;color:#ffe5a1;box-shadow:0 2px 8px rgba(25,55,81,.28)}
+#homepage-server-timeline .timeline-subtitle{color:#344c5c}#homepage-server-timeline .timeline-caveat{color:#405563}#homepage-server-timeline .timeline-date-control{color:#253e50}
+#homepage-server-timeline .timeline-date-control input{background:linear-gradient(145deg,#315879,#1c3b58);border-color:#fff0bc;color:#fff3cd;box-shadow:0 2px 7px rgba(25,55,81,.25)}
+#homepage-server-timeline .timeline-scroll{scrollbar-color:#315879 #d2b261}
+#homepage-server-timeline .timeline-track:before{background:linear-gradient(90deg,#244562,#51799a 42%,#e8c878 50%,#51799a 58%,#244562);box-shadow:0 0 0 1px rgba(255,244,207,.55),0 1px 7px rgba(36,69,98,.26)}
+#homepage-server-timeline .timeline-stop .stop-day{color:#213c52;text-shadow:0 1px rgba(255,255,255,.32)}
+#homepage-server-timeline .timeline-stop .stop-icon{border-color:#fff0bc;color:#fff0bc;background:linear-gradient(145deg,#315879,#1c3b58);box-shadow:0 3px 9px rgba(24,53,78,.33),inset 0 0 0 2px rgba(255,240,188,.14)}
+#homepage-server-timeline .timeline-stop .stop-label{color:#2e4658}
+#homepage-server-timeline .timeline-stop:hover .stop-icon,#homepage-server-timeline .timeline-stop[aria-pressed="true"] .stop-icon{box-shadow:0 0 0 2px #fff0bcaa,0 5px 13px rgba(24,53,78,.42)}
+#homepage-server-timeline .timeline-stop .stop-dot{background:#244562;border-color:#fff0bc;box-shadow:0 0 0 3px #e8c878}
+#homepage-server-timeline .timeline-stop[data-state="past"] .stop-dot{background:#9bc7f4;border-color:#244562}
+#homepage-server-timeline .timeline-stop[data-state="current"] .stop-dot{background:#fff0bc;border-color:#244562;box-shadow:0 0 0 5px rgba(49,88,121,.26)}
+#homepage-server-timeline .timeline-stop[aria-pressed="true"] .stop-dot{background:#fff8df;border-color:#244562;box-shadow:0 0 0 5px rgba(49,88,121,.32)}
+#homepage-server-timeline .timeline-current{background:#244562;border-color:#fff0bc;box-shadow:0 0 0 6px rgba(49,88,121,.28)}
+#homepage-server-timeline .timeline-current-label{background:#244562;border-color:#fff0bc;color:#fff0bc}
+#homepage-server-timeline .timeline-detail{border:1px solid #fff0bc;background:linear-gradient(135deg,#315879,#244562 68%,#1b3853);box-shadow:0 4px 14px rgba(26,57,83,.25),inset 0 0 0 1px rgba(255,240,188,.16)}
+#homepage-server-timeline .timeline-detail:after{opacity:.16;filter:drop-shadow(0 2px 10px rgba(232,200,120,.65))}
+#homepage-server-timeline .timeline-detail .detail-day{color:#ffe5a1}#homepage-server-timeline .timeline-detail .detail-title{color:#f5f8fc}#homepage-server-timeline .timeline-detail p{color:#d8e5ef}#homepage-server-timeline .timeline-detail .detail-when{color:#ffe5a1}
+#homepage-server-timeline .timeline-legend{color:#2a4356}#homepage-server-timeline .legend-dot{background:#315879;border-color:#fff0bc;box-shadow:0 0 0 2px rgba(49,88,121,.15)}
+@media(prefers-reduced-motion:reduce){#homepage-server-timeline .timeline-panel{transition:none}}
+#homepage-server-timeline .timeline-stop[data-key="launch"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(31deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="launch"]{background:radial-gradient(circle at 10% 16%,rgba(232,200,120,.26),transparent 18%),linear-gradient(120deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen2"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(58deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen2"]{background:radial-gradient(circle at 33% 45%,rgba(232,200,120,.26),transparent 22%),linear-gradient(133deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="pet1"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(85deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet1"]{background:radial-gradient(circle at 56% 74%,rgba(232,200,120,.26),transparent 26%),linear-gradient(146deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="fire-era"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(112deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fire-era"]{background:radial-gradient(circle at 79% 35%,rgba(232,200,120,.26),transparent 30%),linear-gradient(159deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="svs-koi"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(139deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="svs-koi"]{background:radial-gradient(circle at 20% 64%,rgba(232,200,120,.26),transparent 18%),linear-gradient(172deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="pet2"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(166deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet2"]{background:radial-gradient(circle at 43% 25%,rgba(232,200,120,.26),transparent 22%),linear-gradient(185deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen3"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(193deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen3"]{background:radial-gradient(circle at 66% 54%,rgba(232,200,120,.26),transparent 26%),linear-gradient(198deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="pet3"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(220deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet3"]{background:radial-gradient(circle at 89% 83%,rgba(232,200,120,.26),transparent 30%),linear-gradient(211deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="crystal-lab"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(247deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="crystal-lab"]{background:radial-gradient(circle at 30% 44%,rgba(232,200,120,.26),transparent 18%),linear-gradient(224deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="chief-gear"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(274deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="chief-gear"]{background:radial-gradient(circle at 53% 73%,rgba(232,200,120,.26),transparent 22%),linear-gradient(237deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen4"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(301deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen4"]{background:radial-gradient(circle at 76% 34%,rgba(232,200,120,.26),transparent 26%),linear-gradient(250deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="pet45"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(328deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet45"]{background:radial-gradient(circle at 17% 63%,rgba(232,200,120,.26),transparent 30%),linear-gradient(263deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="war-academy"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(355deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="war-academy"]{background:radial-gradient(circle at 40% 24%,rgba(232,200,120,.26),transparent 18%),linear-gradient(276deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen5"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(22deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen5"]{background:radial-gradient(circle at 63% 53%,rgba(232,200,120,.26),transparent 22%),linear-gradient(289deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="pet67"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(49deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="pet67"]{background:radial-gradient(circle at 86% 82%,rgba(232,200,120,.26),transparent 26%),linear-gradient(302deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="fc68"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(76deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fc68"]{background:radial-gradient(circle at 27% 43%,rgba(232,200,120,.26),transparent 30%),linear-gradient(315deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen6"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(103deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen6"]{background:radial-gradient(circle at 50% 72%,rgba(232,200,120,.26),transparent 18%),linear-gradient(328deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen7"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(130deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen7"]{background:radial-gradient(circle at 73% 33%,rgba(232,200,120,.26),transparent 22%),linear-gradient(341deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="fc910"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(157deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="fc910"]{background:radial-gradient(circle at 14% 62%,rgba(232,200,120,.26),transparent 26%),linear-gradient(354deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen8"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(184deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen8"]{background:radial-gradient(circle at 37% 23%,rgba(232,200,120,.26),transparent 30%),linear-gradient(7deg,#315879,#244562 69%,#1b3853)}
+#homepage-server-timeline .timeline-stop[data-key="gen9"] .stop-icon{background:radial-gradient(circle at 28% 22%,#fff0bc66,transparent 46%),linear-gradient(211deg,#3e6b8e,#1c3b58 76%)}
+#homepage-server-timeline .timeline-detail[data-key="gen9"]{background:radial-gradient(circle at 60% 52%,rgba(232,200,120,.26),transparent 18%),linear-gradient(20deg,#315879,#244562 69%,#1b3853)}
+</style>
+
+<style id="homepage-server-timeline-glass-blue-outline">
+/* Match the homepage glass cards: dark translucent fill, fine blue edge, and soft blur. */
+#homepage-server-timeline .timeline-panel{position:relative;border:1px solid rgba(164,194,220,.42);border-radius:12px;background:rgba(11,28,45,.60);color:#eef4fa;box-shadow:0 8px 24px rgba(2,9,17,.25),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(12px) saturate(125%);-webkit-backdrop-filter:blur(12px) saturate(125%);transition:border-color .2s ease,box-shadow .2s ease}
+#homepage-server-timeline .timeline-panel:hover{border-color:rgba(155,199,244,.72);box-shadow:0 8px 26px rgba(2,9,17,.3),0 0 16px rgba(94,155,204,.20),inset 0 1px rgba(255,255,255,.1)}
+#homepage-server-timeline .timeline-panel:before{display:none}
+#homepage-server-timeline .timeline-heading h2{color:#f2f6fa;text-shadow:none}#homepage-server-timeline .timeline-clock{color:#9bc7f4}
+#homepage-server-timeline .timeline-subtitle{color:#aebfd1}#homepage-server-timeline .timeline-caveat{color:#9eb3c8}#homepage-server-timeline .timeline-date-control{color:#c0cddd}
+#homepage-server-timeline .timeline-day-badge{background:linear-gradient(135deg,rgba(49,88,121,.65),rgba(28,59,88,.72));border-color:rgba(232,200,120,.7);color:#f4d994}
+#homepage-server-timeline .timeline-stop .stop-day{color:#dce9f6;text-shadow:none}#homepage-server-timeline .timeline-stop .stop-label{color:#c9d7e4;text-shadow:none}
+#homepage-server-timeline .timeline-detail{position:relative;border:1px solid rgba(164,194,220,.42);border-radius:10px;background:rgba(11,28,45,.60);box-shadow:0 8px 24px rgba(2,9,17,.25),inset 0 1px rgba(255,255,255,.08);backdrop-filter:blur(12px) saturate(125%);-webkit-backdrop-filter:blur(12px) saturate(125%)}
+#homepage-server-timeline .timeline-detail:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;border-radius:10px 0 0 10px;background:linear-gradient(180deg,#e8c878,#9bc7f4,#e8c878);opacity:.85}
+#homepage-server-timeline .timeline-detail .detail-day{color:#f4d994}#homepage-server-timeline .timeline-detail .detail-title{color:#f5f8fc}#homepage-server-timeline .timeline-detail p{color:#c4d3e0}#homepage-server-timeline .timeline-detail .detail-when{color:#f4d994}
+#homepage-server-timeline .timeline-legend{color:#b8c7d6}
+@media(prefers-reduced-motion:reduce){#homepage-server-timeline .timeline-panel{transition:none}}
+#homepage-server-timeline .timeline-detail[data-key="launch"]{background:radial-gradient(circle at 12% 18%,rgba(232,200,120,.13),transparent 17%),linear-gradient(31deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen2"]{background:radial-gradient(circle at 35% 47%,rgba(232,200,120,.13),transparent 20%),linear-gradient(58deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="pet1"]{background:radial-gradient(circle at 58% 76%,rgba(232,200,120,.13),transparent 23%),linear-gradient(85deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="fire-era"]{background:radial-gradient(circle at 81% 41%,rgba(232,200,120,.13),transparent 26%),linear-gradient(112deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="svs-koi"]{background:radial-gradient(circle at 26% 70%,rgba(232,200,120,.13),transparent 17%),linear-gradient(139deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="pet2"]{background:radial-gradient(circle at 49% 35%,rgba(232,200,120,.13),transparent 20%),linear-gradient(166deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen3"]{background:radial-gradient(circle at 72% 64%,rgba(232,200,120,.13),transparent 23%),linear-gradient(193deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="pet3"]{background:radial-gradient(circle at 17% 29%,rgba(232,200,120,.13),transparent 26%),linear-gradient(220deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="crystal-lab"]{background:radial-gradient(circle at 40% 58%,rgba(232,200,120,.13),transparent 17%),linear-gradient(247deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="chief-gear"]{background:radial-gradient(circle at 63% 23%,rgba(232,200,120,.13),transparent 20%),linear-gradient(274deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen4"]{background:radial-gradient(circle at 86% 52%,rgba(232,200,120,.13),transparent 23%),linear-gradient(301deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="pet45"]{background:radial-gradient(circle at 31% 81%,rgba(232,200,120,.13),transparent 26%),linear-gradient(328deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="war-academy"]{background:radial-gradient(circle at 54% 46%,rgba(232,200,120,.13),transparent 17%),linear-gradient(355deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen5"]{background:radial-gradient(circle at 77% 75%,rgba(232,200,120,.13),transparent 20%),linear-gradient(22deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="pet67"]{background:radial-gradient(circle at 22% 40%,rgba(232,200,120,.13),transparent 23%),linear-gradient(49deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="fc68"]{background:radial-gradient(circle at 45% 69%,rgba(232,200,120,.13),transparent 26%),linear-gradient(76deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen6"]{background:radial-gradient(circle at 68% 34%,rgba(232,200,120,.13),transparent 17%),linear-gradient(103deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen7"]{background:radial-gradient(circle at 13% 63%,rgba(232,200,120,.13),transparent 20%),linear-gradient(130deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="fc910"]{background:radial-gradient(circle at 36% 28%,rgba(232,200,120,.13),transparent 23%),linear-gradient(157deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen8"]{background:radial-gradient(circle at 59% 57%,rgba(232,200,120,.13),transparent 26%),linear-gradient(184deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+#homepage-server-timeline .timeline-detail[data-key="gen9"]{background:radial-gradient(circle at 82% 22%,rgba(232,200,120,.13),transparent 17%),linear-gradient(211deg,rgba(49,88,121,.48),rgba(11,28,45,.64) 72%)}
+</style>
+<style id="homepage-server-timeline-navy-milestones">
+/* Replace inherited purple .page button styling on timeline milestones with the homepage's deep navy. */
+#home #homepage-server-timeline .timeline-stop{background:#081522!important;border:1px solid rgba(155,199,244,.48)!important;border-radius:9px;box-shadow:0 3px 12px rgba(1,8,18,.36),inset 0 1px rgba(255,255,255,.035);color:#edf5fc!important}
+#home #homepage-server-timeline .timeline-stop:hover{background:#10273a!important;border-color:#9bc7f4!important;box-shadow:0 0 0 1px rgba(155,199,244,.25),0 5px 14px rgba(1,8,18,.42)}
+#home #homepage-server-timeline .timeline-stop[aria-pressed="true"]{background:linear-gradient(145deg,#17334c,#0b1b2a)!important;border-color:#e7c77b!important;box-shadow:0 0 0 1px rgba(231,199,123,.42),0 5px 16px rgba(1,8,18,.44)}
+#home #homepage-server-timeline .timeline-stop .stop-day{color:#e8f1f8!important}#home #homepage-server-timeline .timeline-stop .stop-label{color:#c9d8e5!important}
+#home #homepage-server-timeline .timeline-stop[data-state="past"] .stop-dot{background:#9bc7f4;border-color:#244562}
+#home #homepage-server-timeline .timeline-stop[data-state="current"] .stop-dot{background:#e7c77b;border-color:#244562}
+#home #homepage-server-timeline .timeline-stop[data-key="launch"]{background:linear-gradient(25deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen2"]{background:linear-gradient(44deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="pet1"]{background:linear-gradient(63deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="fire-era"]{background:linear-gradient(82deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="svs-koi"]{background:linear-gradient(101deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="pet2"]{background:linear-gradient(120deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen3"]{background:linear-gradient(139deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="pet3"]{background:linear-gradient(158deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="crystal-lab"]{background:linear-gradient(177deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="chief-gear"]{background:linear-gradient(196deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen4"]{background:linear-gradient(215deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="pet45"]{background:linear-gradient(234deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="war-academy"]{background:linear-gradient(253deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen5"]{background:linear-gradient(272deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="pet67"]{background:linear-gradient(291deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="fc68"]{background:linear-gradient(310deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen6"]{background:linear-gradient(329deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen7"]{background:linear-gradient(348deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="fc910"]{background:linear-gradient(7deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen8"]{background:linear-gradient(26deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+#home #homepage-server-timeline .timeline-stop[data-key="gen9"]{background:linear-gradient(45deg,rgba(36,69,98,.28),#081522 68%,rgba(8,21,34,.96))!important}
+</style>
+<style id="gift-code-remove-button-style">
+#giftcenter #gift-active-list .gift-simple-card{position:relative;padding-top:30px!important}
+#giftcenter #gift-active-list .gift-simple-card .gift-code-remove{position:absolute;top:5px;right:6px;z-index:3;display:grid;place-items:center;width:20px;height:20px;min-width:20px;padding:0!important;border:1px solid rgba(155,199,244,.42)!important;border-radius:50%!important;background:rgba(11,28,45,.78)!important;color:#d6e7f4!important;font:700 14px/1 system-ui,sans-serif!important;box-shadow:0 2px 6px rgba(1,8,18,.36);opacity:.78;transition:opacity .16s ease,border-color .16s ease,color .16s ease,transform .16s ease}
+#giftcenter #gift-active-list .gift-simple-card .gift-code-remove:hover{opacity:1;border-color:#e8c878!important;color:#ffe6a5!important;transform:scale(1.08)}
+#giftcenter #gift-active-list .gift-simple-card .gift-code-remove:focus-visible{outline:2px solid #e8c878!important;outline-offset:2px}
+</style>
+<link rel="stylesheet" href="assets/dreamscape-trainer.css"><link rel="stylesheet" href="assets/marvelous-fantasia.css">
+<style id="side-snowfall">
+@media (min-width:1265px){body::before,body::after{content:"";position:fixed;top:0;bottom:0;width:calc((100vw - 1264px)/2);z-index:0;pointer-events:none;background-image:url("assets/side-snowfall.gif");background-repeat:no-repeat;background-position:center;background-size:100% 100%;opacity:.82}body::before{left:0}body::after{right:0}body>main{position:relative;z-index:1}}
+</style><style id="frb-alliance-blue-message-cards">.frb-message-card{border-color:#52718b!important;background:linear-gradient(135deg,#173552,#0c1d30)!important}.frb-message-card h4{color:#d6e9fa!important}</style><style id="timeline-milestone-counter-layout">#homepage-server-timeline .timeline-detail p:not(.detail-when){max-width:52%}#homepage-server-timeline .timeline-detail .detail-when{position:absolute;left:55%;top:50%;transform:translateY(-50%);width:calc(45% - 26px);max-width:none;margin:0;text-align:left;color:#f4d994;font-size:17px;font-weight:850;line-height:1.35}@media(max-width:650px){#homepage-server-timeline .timeline-detail p:not(.detail-when){max-width:none}#homepage-server-timeline .timeline-detail .detail-when{position:relative;left:auto;top:auto;transform:none;width:100%;margin:12px 0 0;text-align:right;font-size:14px}}</style></head>
 <body>
 <header><nav>
-<div class="brand"><span class="brand-mark" role="img" aria-label="FRB logo" title="FRB"><img src="assets/frb-logo.gif" alt="FRB"></span> <span class="brand-sub">United We Rise.</span></div>
+<div class="brand"><span class="brand-mark" role="img" aria-label="FRB logo" title="FRB"><img src="assets/frb-logo-blue-gold.gif" alt="FRB"></span> <span class="brand-sub">United We Rise.</span></div>
 <button class="navbtn active" data-page="home" data-i="home">Home</button>
 <button class="navbtn" data-page="knowledge">WikiWOS</button>
 <button class="navbtn" data-page="events" data-i="events">Events</button>
 <button class="navbtn" data-page="heroes">Heroes</button>
 <button class="navbtn" data-page="giftcenter" data-gift="giftNav">🎁 Gifts</button>
+<button class="navbtn" data-page="games">Games</button>
 <button class="navbtn" data-page="alliance" data-i="alliance">Alliance Space</button>
 <button class="navbtn" data-page="proposals" data-i="proposals">Suggestions</button>
 <div id="gtranslate_wrapper" aria-label="Choose website language"></div>
@@ -356,8 +594,10 @@ header nav #gtranslate_wrapper .gt_selector:hover,header nav #gtranslate_wrapper
 </nav></header>
 <main>
 <section id="home" class="page">
-<div class="hero"><div class="eyebrow" data-i="eyebrow">WHITEOUT SURVIVAL • FRB ALLIANCE HUB</div><h1 data-i="title">Built to Win.</h1><input id="search" class="search" data-i-ph="search" placeholder="Search guides, events and strategies..."></div><section id="searchresults" class="grid hidden" aria-live="polite" style="margin-top:14px"></section>
-<div class="sectionhead"><h2 data-i="timers">Live Server Timers · UTC</h2><span class="pill">UTC</span></div>
+<div class="hero"><div class="hero-video-wrap" aria-hidden="true"><video id="hero-background-video" class="hero-video" autoplay muted loop playsinline preload="auto"><source src="assets/frb-heroes-background.mp4" type="video/mp4"></video></div><div class="hero-content"><div class="eyebrow" data-i="eyebrow">WHITEOUT SURVIVAL • FRB ALLIANCE HUB</div><h1 data-i="title">Built to Win.</h1><p class="hero-intro">Alliance strategy, live timers and field guides for Whiteout Survival.</p><input id="search" class="search" data-i-ph="search" placeholder="Search guides, events and strategies..."><div class="hero-actions"><a class="action primary" href="#featured">EXPLORE GUIDES <span aria-hidden="true">↓</span></a><a class="action subtle" href="#timers">LIVE SERVER TIMERS <span aria-hidden="true">→</span></a></div><div class="hero-stats"><div class="hero-stat"><span>FOCUS</span><strong>War · Events · Growth</strong></div><div class="hero-stat"><span>TIME</span><strong>UTC schedules</strong></div><div class="hero-stat"><span>FIELD LIBRARY</span><strong>Guides · Timers · Tools</strong></div></div><div class="hero-scroll">SCROLL TO EXPLORE <span aria-hidden="true">⌄</span></div></div></div>
+<section id="homepage-server-timeline" aria-labelledby="homepage-timeline-title"><div class="timeline-panel"><div class="timeline-heading"><span class="timeline-clock" aria-hidden="true">◷</span><h2 id="homepage-timeline-title">Server timeline</h2><span id="homepage-timeline-day" class="timeline-day-badge">Day —</span></div><p class="timeline-subtitle">Tap a milestone to see what unlocks.</p><div class="timeline-tools"><p class="timeline-caveat">Based on the reference chart. Unlock dates can vary by state.</p><label class="timeline-date-control" for="homepage-server-start">Server opening date <input id="homepage-server-start" type="date" value="2026-10-17"></label></div><div class="timeline-scroll" id="homepage-timeline-scroll" tabindex="0" aria-label="Scrollable server milestone timeline"><div class="timeline-track" id="homepage-timeline-track"></div></div><article class="timeline-detail" id="homepage-timeline-detail" aria-live="polite"></article><div class="timeline-legend" aria-label="Milestone categories"><span><i class="legend-dot"></i>Pets and events</span><span><i class="legend-dot"></i>Hero generations</span><span><i class="legend-dot"></i>Fire Crystal progression</span></div></div></section>
+<section id="searchresults" class="grid hidden" aria-live="polite" style="margin-top:14px"></section>
+<div class="sectionhead" id="timers"><h2 data-i="timers">Live Server Timers · UTC</h2><span class="pill">UTC</span></div>
 <div class="primary-timers">
   <div class="card reset-card">
     <span class="tag">◷ DAILY SERVER RESET</span>
@@ -374,7 +614,7 @@ header nav #gtranslate_wrapper .gt_selector:hover,header nav #gtranslate_wrapper
     <small>Base stamina · Information only</small>
   </div>
   <div class="info-card lighthouse-info">
-    <span class="info-label">🔭 LIGHTHOUSE INTEL</span>
+    <span class="info-label">✦ LIGHTHOUSE INTEL</span>
     <strong>00:00 · 08:00 · 16:00</strong>
     <small>UTC schedule · Information only</small>
   </div>
@@ -399,7 +639,7 @@ header nav #gtranslate_wrapper .gt_selector:hover,header nav #gtranslate_wrapper
 </section>
 <section id="knowledge" class="page hidden"><div class="sectionhead"><h2 data-i="knowtitle">Development Knowledge Base</h2><span class="pill public">PUBLIC</span></div><div class="notice" data-i="knowhint">Hero growth and alliance development guides. Event walkthroughs are collected in Events.</div><div class="grid" id="guidelist" style="margin-top:14px"></div></section>
 <section id="events" class="page hidden"><div class="sectionhead"><h2 data-i="eventtitle">Event Center</h2><span class="pill public">PUBLIC</span></div><div class="notice" data-i="eventhint">Public event guides and general schedules. Alliance-specific assignments belong in Alliance Space.</div><div class="grid" style="margin-top:14px"><article class="card svs-event-card"><span class="tag" data-i="svsprio">★ MOST IMPORTANT STATE EVENT</span><h3 data-i="svs">State vs State (SvS)</h3><p data-i="svsshort">The state-wide priority: prepare together, win the Prep race, coordinate the Castle battle and recover troops in Field Triage.</p><button class="action subtle" onclick="openGuide(&quot;svs&quot;)" data-i="read">Read guide →</button></article><article class="card"><span class="tag">ARENA GUIDE</span><h3 data-i="arena">Arena</h3><p data-i="arenashort">Two alternating formats, daily challenges, formations, points and shop priorities.</p><button class="action subtle" onclick="openGuide(&quot;arena&quot;)" data-i="read">Read guide →</button></article><article class="card"><span class="tag">HALL OF CHIEFS GUIDE</span><h3 data-i="hallchiefs">Hall of Chiefs</h3><p data-i="hallchiefsshort">Seven-day event: stage tasks, scoring, rewards and saving strategy.</p><button class="action subtle" onclick="openGuide('hallchiefs')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">LABYRINTH GUIDE</span><h3 data-i="labyrinth">The Labyrinth</h3><p data-i="labyrinthshort">Six weekly zones, zone-specific stats, FRB troop-ratio starting points and Glowstone rewards.</p><button class="action subtle" onclick="openGuide(&quot;labyrinth&quot;)" data-i="read">Read guide →</button></article><article class="card"><span class="tag">FISHING TOURNAMENT GUIDE</span><h3>Fishing Tournament</h3><p>Seasonal catches, Fishing Kit upgrades, Frosty Prospector and collection rewards.</p><button class="action subtle" onclick="openGuide('fishing')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">FROSTFIRE MINE GUIDE</span><h3>Frostfire Mine</h3><p>Orichalcum, Mine Patrols, skill route, Vein Outbursts and Smelter timing.</p><button class="action subtle" onclick="openGuide('frostfire')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">SNOWBUSTERS GUIDE</span><h3 data-i="snowbusters">Snowbusters</h3><p data-i="snowbshort">Snow-clearing routes, fuel, gear, rockets and carry-over items.</p><button class="action subtle" onclick="openGuide('snowbusters')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">DREAMSCAPE MEMORY GUIDE</span><h3 data-i="dreamscape">Dreamscape Memory</h3><p data-i="dreamshort">Chapter search, time limits, Dream Fishbits and Recall Road rewards.</p><button class="action subtle" onclick="openGuide('dreamscape')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">DEADSHOT GUIDE</span><h3 data-i="deadshot">Deadshot Tundra</h3><p data-i="deadshort">Shot Tokens, the 12-target board, chest upgrades and token sources.</p><button class="action subtle" onclick="openGuide('deadshot')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">BEAST HUNT GUIDE</span><h3 data-i="defeatbeasts">Defeat Nearby Beasts</h3><p data-i="beastshort">Two-day stamina event, point scoring, milestones and Gen 7 rewards.</p><button class="action subtle" onclick="openGuide('defeatbeasts')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">JOURNEY OF LIGHT GUIDE</span><h3 data-i="journey">Journey of Light</h3><p data-i="journeyshort">Eight-hour flights, Radiance Treasures, chest merging and milestones.</p><button class="action subtle" onclick="openGuide('journey')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">MIA FORTUNE GUIDE</span><h3 data-i="miafortune">Mia’s Fortune</h3><p data-i="miashort">Wish rewards, Fortune Token costs, multipliers and milestones.</p><button class="action subtle" onclick="openGuide('miafortune')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">EVENT GUIDE</span><h3>Alliance Championship</h3><p data-i="acdesc">Registration, lane strategy, battle phases, tiers and shop.</p><button class="action subtle" onclick="openGuide('ac')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">BATTLE GUIDE</span><h3>Foundry Battle</h3><p data-i="foundrydesc">Battlefield overview, building control and team assignments.</p><button class="action subtle" onclick="openGuide('foundry')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">EVENT GUIDE</span><h3>Bear Trap</h3><p data-i="trapdesc">Rallies, formations, timing and participation tips.</p><button class="action subtle" onclick="openGuide('bear')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">EVENT GUIDE</span><h3>Crazy Joe</h3><p>20-wave defense, troop swaps, HQ formations and scoring strategy.</p><button class="action subtle" onclick="openGuide('crazyjoe')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">ALLIANCE GUIDE</span><h3>Alliance Mobilization</h3><p>Mission selection, points, league rewards and resource planning.</p><button class="action subtle" onclick="openGuide('mobilization')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">PVP GUIDE</span><h3>Brothers in Arms</h3><p>Kill Event schedule, point values, troop risks and FRB rules.</p><button class="action subtle" onclick="openGuide('brothers')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">ALLIANCE EVENT GUIDE</span><h3>Facilities & Strongholds</h3><p>Facility buffs, territory connections and Fortress Battle Strongholds.</p><button class="action subtle" onclick="openGuide('facilities')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">EVENT GUIDE</span><h3>Mercenary Prestige</h3><p>Personal mercenary challenges, stamina planning and alliance Captains.</p><button class="action subtle" onclick="openGuide('mercenary')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">CANYON CLASH GUIDE</span><h3 data-i="canyon">Canyon Clash</h3><p data-i="canyonshort">Eligibility, three squads, four phases, fuel, Guardians and Lost Canyon strategy.</p><button class="action subtle" onclick="openGuide('canyon')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">ALLIANCE EVENT GUIDE</span><h3 data-i="showdown">Alliance Showdown</h3><p data-i="showdownshort">Six task stages, Victory Points, star rewards and linked Tundra Trade Route strategies.</p><button class="action subtle" onclick="openGuide('showdown')" data-i="read">Read guide →</button></article><article class="card"><span class="tag">KING OF ICEFIELD GUIDE</span><h3 data-i="kingicefield">King of Icefield</h3><p data-i="koishort">Seven daily stages, scoring values, Medals of Honor and state/cross-state rewards.</p><button class="action subtle" onclick="openGuide('kingicefield')" data-i="read">Read guide →</button></article></div></section>
-<section id="alliance" class="page hidden"><div class="sectionhead"><h2 data-i="alliancetitle">Alliance Space</h2><span class="pill public" data-i="publiclabel">PUBLIC</span></div><div class="notice" data-i="demo">Public information space for FRB updates, event coordination and leadership announcements. Do not post confidential information here.</div><div class="split alliance-assignments" style="margin-top:14px"><div class="card assignment-card"><h3>Event Responsibilities</h3><p class="muted">Event leads and coordinators</p><div class="responsibility-list"><div class="responsibility"><span>Fortress &amp; Stronghold Coordinator</span><strong>—</strong></div><div class="responsibility"><span>Bear Trap Coordinator</span><strong>Anyone online for their trap</strong></div><div class="responsibility"><span>Event Coordinator</span><strong>Veronica (Assisted by Nyx, with Discord support from ty)</strong></div><div class="responsibility"><span>Championship Coordinator</span><strong>Chief (Assisted by Nyx)</strong></div></div><button class="action primary" onclick="showProposal('plan')" data-i="suggestplan">Suggest a plan</button></div><div class="card assignment-card"><h3>Leadership Responsibilities</h3><p class="muted">Alliance and member coordination</p><div class="responsibility-list"><div class="responsibility"><span>Diplomats</span><strong>CJ &amp; JC</strong></div><div class="responsibility"><span>Recruitment Officer</span><strong>Samb</strong></div><div class="responsibility"><span>Member Management Officer</span><strong>JC &amp; Nyx (Assistance from others)</strong></div><div class="responsibility"><span>Territory &amp; Technology Officer</span><strong>phLuhX</strong></div><div class="responsibility"><span>Communications Officer</span><strong>Veronica (Assisted by Nyx, with Discord support from ty)</strong></div></div></div></div><details id="frb-alliance-message-tools" class="card frb-alliance-tools"><summary><span data-frb-tools="heading">FRB Alliance &amp; R4/R5 Tools</span><small data-frb-tools="summary">Copy-ready alliance messages and quick reference sheets</small></summary><div class="frb-tools-content"><p class="muted" data-frb-tools="hint">Choose a template, edit anything in brackets, then click Copy to paste it into alliance chat.</p><h3 data-frb-tools="eventsTitle">EVENTS · 16 message templates</h3><div id="frb-event-templates" class="frb-message-grid"></div><h3 data-frb-tools="messagesTitle">Alliance message templates</h3><div id="frb-message-templates" class="frb-message-grid"></div><h3 data-frb-tools="sheetsTitle">Quick reference sheets</h3><div id="frb-quick-sheets" class="frb-sheet-grid"></div><p id="frb-copy-status" class="status" aria-live="polite"></p></div></details></section>
+<section id="games" class="page hidden"><div class="sectionhead"><div><h2>Games</h2><p class="muted">Take a break and practise event games before you spend in-game resources.</p></div><span class="pill public">PUBLIC</span></div><div class="notice">Dreamscape Memory practice uses the live HOP/Hot-WOS game, with its original Whiteout Survival scenes, stage selector, targets, hints and restart controls. Choose a scene below to begin.</div><div class="grid" style="margin-top:14px"><article class="card"><span class="tag">DREAMSCAPE MEMORY</span><h3>Hidden-object practice</h3><p>Pick a season and scene, study the real map, then find the listed objects. Practice is free and does not spend Fishbits.</p></article><article class="card"><span class="tag">PRACTICE TOOL</span><h3>Current Scenes</h3><p>Includes Seasons 2–5 and co-op maps.</p></article></div><div id="games-practice-mount"></div><div id="marvelous-fantasia-mount"></div></section><section id="alliance" class="page hidden"><div class="sectionhead"><h2 data-i="alliancetitle">Alliance Space</h2><span class="pill public" data-i="publiclabel">PUBLIC</span></div><div class="notice" data-i="demo">Public information space for FRB updates, event coordination and leadership announcements. Do not post confidential information here.</div><div class="split alliance-assignments" style="margin-top:14px"><div class="card assignment-card"><h3>Event Responsibilities</h3><p class="muted">Event leads and coordinators</p><div class="responsibility-list"><div class="responsibility"><span>Fortress &amp; Stronghold Coordinator</span><strong>—</strong></div><div class="responsibility"><span>Bear Trap Coordinator</span><strong>Anyone online for their trap</strong></div><div class="responsibility"><span>Event Coordinator</span><strong>Veronica (Assisted by Nyx, with Discord support from ty)</strong></div><div class="responsibility"><span>Championship Coordinator</span><strong>Chief (Assisted by Nyx)</strong></div></div><button class="action primary" onclick="showProposal('plan')" data-i="suggestplan">Suggest a plan</button></div><div class="card assignment-card"><h3>Leadership Responsibilities</h3><p class="muted">Alliance and member coordination</p><div class="responsibility-list"><div class="responsibility"><span>Diplomats</span><strong>CJ &amp; JC</strong></div><div class="responsibility"><span>Recruitment Officer</span><strong>Samb</strong></div><div class="responsibility"><span>Member Management Officer</span><strong>JC &amp; Nyx (Assistance from others)</strong></div><div class="responsibility"><span>Territory &amp; Technology Officer</span><strong>phLuhX</strong></div><div class="responsibility"><span>Communications Officer</span><strong>Veronica (Assisted by Nyx, with Discord support from ty)</strong></div></div></div></div><details id="frb-alliance-message-tools" class="card frb-alliance-tools"><summary><span data-frb-tools="heading">FRB Alliance &amp; R4/R5 Tools</span><small data-frb-tools="summary">Copy-ready alliance messages and quick reference sheets</small></summary><div class="frb-tools-content"><p class="muted" data-frb-tools="hint">Choose a template, edit anything in brackets, then click Copy to paste it into alliance chat.</p><h3 data-frb-tools="eventsTitle">EVENTS · 16 message templates</h3><div id="frb-event-templates" class="frb-message-grid"></div><h3 data-frb-tools="messagesTitle">Alliance message templates</h3><div id="frb-message-templates" class="frb-message-grid"></div><h3 data-frb-tools="sheetsTitle">Quick reference sheets</h3><div id="frb-quick-sheets" class="frb-sheet-grid"></div><p id="frb-copy-status" class="status" aria-live="polite"></p></div></details></section>
 <section id="proposals" class="page hidden"><div class="sectionhead"><h2 data-i="proposaltitle">Community Suggestions</h2><span class="pill public" data-i="openlabel">OPEN TO ALL</span></div><div class="notice" data-i="proposalhint">Anyone can suggest a new guide, correction or event idea. R4/R5 review and approve changes before they become official.</div><div class="card" style="margin-top:14px"><h3 data-i="submitidea">Submit an idea</h3><label data-i="type">Suggestion type</label><select id="ptype" class="field"><option value="New guide">New guide</option><option value="Correction">Correction</option><option value="Event idea">Event idea</option><option value="Alliance plan">Alliance plan</option></select><label data-i="subject">Title</label><input id="psubject" class="field" placeholder="Short title"><label data-i="details">Details</label><textarea id="pdetails" class="field" placeholder="Describe your suggestion..."></textarea><button class="action primary" onclick="submitProposal()" data-i="submit">Send suggestion</button><p class="status" id="submitstatus"></p></div><div class="sectionhead"><h2 data-i="queue">Suggestion queue (local demo)</h2></div><div id="queue" class="grid"></div></section>
 
 <section id="giftcenter" class="page hidden">
@@ -886,11 +1126,13 @@ renderGuides();setLang("en");tick();setInterval(tick,1000);
 </script>
 <script>
 const GIFT_REPORT_URL = "https://github.com/DYN4770/server4770/issues/new";
+const GIFT_DISMISSED_KEY = "frbDismissedGiftCodes";
 let giftLang = "en";
 let giftCatalog = [];
+let dismissedGiftCodes = loadDismissedGiftCodes();
 const GIFT_TEXT = {
-  en: { giftNav: "🎁 Gifts", intro: "Current codes, simple copy, and a link to the official WOS portal.", activeCodes: "CURRENT CODES", copyHint: "Copy a code here, then paste it into the official portal.", copy: "Copy", officialPortal: "Open official WOS gift-code portal ↗", submitTitle: "Report a code", submitHint: "Reports open a public GitHub review form. You can leave the expiry date blank if it is unknown.", codeLabel: "Gift code", expiryLabel: "Valid until (optional)", reportSubmit: "Prepare code report", empty: "No current codes are listed.", copied: "Code copied. Paste it into the official portal and complete redemption there.", copyFailed: "Could not copy automatically. Select the code and copy it manually.", enterCode: "Enter a gift code first.", reportReady: "Review the report in the new GitHub tab and submit it there. A GitHub account is required; reports are public.", loadError: "Could not load the current code list." },
-  pl: { giftNav: "🎁 Prezenty", intro: "Aktualne kody, kopiowanie i link do oficjalnego portalu WOS.", activeCodes: "AKTUALNE KODY", copyHint: "Skopiuj tu kod, a następnie wklej go w oficjalnym portalu.", copy: "Kopiuj", officialPortal: "Otwórz oficjalny portal kodów WOS ↗", submitTitle: "Zgłoś kod", submitHint: "Zgłoszenie otworzy publiczny formularz GitHuba. Datę ważności zostaw pustą, jeśli jest nieznana.", codeLabel: "Kod prezentowy", expiryLabel: "Ważny do (opcjonalnie)", reportSubmit: "Przygotuj zgłoszenie kodu", empty: "Brak aktualnych kodów na liście.", copied: "Kod skopiowany. Wklej go w oficjalnym portalu i dokończ odbiór tam.", copyFailed: "Nie udało się skopiować automatycznie. Zaznacz kod i skopiuj go ręcznie.", enterCode: "Najpierw wpisz kod.", reportReady: "Sprawdź zgłoszenie w nowej karcie GitHuba i wyślij je tam. Wymagane jest konto GitHub; zgłoszenia są publiczne.", loadError: "Nie udało się wczytać aktualnej listy kodów." }
+  en: { giftNav: "🎁 Gifts", intro: "Current codes, simple copy, and a link to the official WOS portal.", activeCodes: "CURRENT CODES", copyHint: "Copy a code here, then paste it into the official portal.", copy: "Copy", officialPortal: "Open official WOS gift-code portal ↗", submitTitle: "Report a code", submitHint: "Reports open a public GitHub review form. You can leave the expiry date blank if it is unknown.", codeLabel: "Gift code", expiryLabel: "Valid until (optional)", reportSubmit: "Prepare code report", empty: "No current codes are listed.", copied: "Code copied. Paste it into the official portal and complete redemption there.", copyFailed: "Could not copy automatically. Select the code and copy it manually.", enterCode: "Enter a gift code first.", reportReady: "Review the report in the new GitHub tab and submit it there. A GitHub account is required; reports are public.", loadError: "Could not load the current code list.", removed: "Code removed from this browser’s gift-code list." },
+  pl: { giftNav: "🎁 Prezenty", intro: "Aktualne kody, kopiowanie i link do oficjalnego portalu WOS.", activeCodes: "AKTUALNE KODY", copyHint: "Skopiuj tu kod, a następnie wklej go w oficjalnym portalu.", copy: "Kopiuj", officialPortal: "Otwórz oficjalny portal kodów WOS ↗", submitTitle: "Zgłoś kod", submitHint: "Zgłoszenie otworzy publiczny formularz GitHuba. Datę ważności zostaw pustą, jeśli jest nieznana.", codeLabel: "Kod prezentowy", expiryLabel: "Ważny do (opcjonalnie)", reportSubmit: "Przygotuj zgłoszenie kodu", empty: "Brak aktualnych kodów na liście.", copied: "Kod skopiowany. Wklej go w oficjalnym portalu i dokończ odbiór tam.", copyFailed: "Nie udało się skopiować automatycznie. Zaznacz kod i skopiuj go ręcznie.", enterCode: "Najpierw wpisz kod.", reportReady: "Sprawdź zgłoszenie w nowej karcie GitHuba i wyślij je tam. Wymagane jest konto GitHub; zgłoszenia są publiczne.", loadError: "Nie udało się wczytać aktualnej listy kodów.", removed: "Kod usunięty z listy kodów w tej przeglądarce." }
 };
 
 function gt(key) { return GIFT_TEXT[giftLang][key] || GIFT_TEXT.en[key] || key; }
@@ -903,11 +1145,13 @@ function isCurrent(item) {
   if (/^\d{4}-\d{2}-\d{2}$/.test(expiry) && expiry < new Date().toISOString().slice(0, 10)) return false;
   return true;
 }
+function loadDismissedGiftCodes() { try { const value = JSON.parse(localStorage.getItem(GIFT_DISMISSED_KEY) || "[]"); return new Set(Array.isArray(value) ? value.map(code => String(code).trim().toUpperCase()) : []); } catch { return new Set(); } }
+function dismissGiftCode(code) { const normalized = String(code || "").trim().toUpperCase(); if (!normalized) return; dismissedGiftCodes.add(normalized); try { localStorage.setItem(GIFT_DISMISSED_KEY, JSON.stringify([...dismissedGiftCodes])); } catch {} renderGiftCenter(); const message = document.querySelector("#gift-copy-message"); if (message) message.textContent = gt("removed"); }
 function renderGiftCenter() {
   const list = document.querySelector("#gift-active-list");
   if (!list) return;
-  const current = giftCatalog.filter(isCurrent);
-  list.innerHTML = current.length ? current.map(item => `<article class="gift-simple-card"><code>${esc(item.code)}</code><button class="action" type="button" data-copy-code="${esc(item.code)}">${gt("copy")}</button></article>`).join("") : `<div class="empty">${gt("empty")}</div>`;
+  const current = giftCatalog.filter(item => isCurrent(item) && !dismissedGiftCodes.has(String(item.code).trim().toUpperCase()));
+  list.innerHTML = current.length ? current.map(item => `<article class="gift-simple-card"><button class="gift-code-remove" type="button" data-dismiss-code="${esc(item.code)}" aria-label="Remove ${esc(item.code)} from this browser’s list" title="Remove this code">×</button><code>${esc(item.code)}</code><button class="action" type="button" data-copy-code="${esc(item.code)}">${gt("copy")}</button></article>`).join("") : `<div class="empty">${gt("empty")}</div>`;
   document.querySelectorAll("[data-gift]").forEach(el => { el.textContent = gt(el.dataset.gift); });
   const updated = document.querySelector("#gift-last-update");
   if (updated && window.giftCatalogUpdatedAt) { const date = new Date(window.giftCatalogUpdatedAt); const locale = giftLang === "pl" ? "pl-PL" : "en-GB"; const formatted = Number.isNaN(date.getTime()) ? window.giftCatalogUpdatedAt : date.toLocaleString(locale, { dateStyle: "medium", timeStyle: "short" }); updated.textContent = (giftLang === "pl" ? "Aktualizacja: " : "Updated: ") + formatted; }
@@ -927,6 +1171,7 @@ async function syncPublishedGiftCatalog() {
   } catch { document.querySelector("#gift-active-list").innerHTML = `<div class="empty">${gt("loadError")}</div>`; }
 }
 document.querySelector("#gift-active-list")?.addEventListener("click", async event => {
+  const removeButton = event.target.closest("[data-dismiss-code]"); if (removeButton) { dismissGiftCode(removeButton.dataset.dismissCode); return; }
   const button = event.target.closest("[data-copy-code]"); if (!button) return;
   const copied = await copyText(button.dataset.copyCode); document.querySelector("#gift-copy-message").textContent = copied ? gt("copied") : gt("copyFailed");
 });
@@ -1005,15 +1250,15 @@ const eventTemplates={en:[
 {title:"Bear Hunt / Bear Trap 1",text:"🐻 BEAR HUNT · TRAP 1\nStarts: [date and UTC time]\nCoordinator: Anyone online for their trap\nJoin the marked rally setup and send your strongest suitable march. Follow in-game rally instructions; do not launch extra rallies unless asked."},
 {title:"Bear Hunt / Bear Trap 2",text:"🐻 BEAR HUNT · TRAP 2\nStarts: [date and UTC time]\nCoordinator: Anyone online for their trap\nJoin on time and follow the posted rally setup. Keep marches available for the event and ask the online trap coordinator if you need help."},
 {title:"Crazy Joe",text:"🐺 CRAZY JOE\nStarts: [date and UTC time]\nCoordinator: Neo\nBe online for the waves. Keep your city defense ready and reinforce members according to the posted assignment. Do not start rallies unless instructed."},
-{title:"Alliance Championship",text:"🏅 ALLIANCE CHAMPIONSHIP\nMatch: [opponent / round]\nTime: [UTC time]\nPlease confirm attendance with [coordinator]. Review the selected heroes and troop plan before the match; follow the live callouts."},
+{title:"Alliance Championship",text:"💝 ALLIANCE CHAMPIONSHIP\nWill you take the middle lane in Alliance Championship? If you can, use formation 50 / 20 / 30.\nDo not forget Crazy Joe runs twice this week. Message us if you have questions about either event."},
 {title:"Foundry Battle",text:"⚒️ FOUNDRY BATTLE\nMatch time: [date and UTC time]\nCoordinator: 제리코\nCheck your assigned lane and role. Be ready to relocate when called and follow team instructions during the match."},
-{title:"Labyrinth",text:"🧭 LABYRINTH EVENT\nRun time: [date and UTC time]\nPlan: [target / route]\nJoin the group and follow the marked route. Share discoveries in alliance chat and avoid spending attempts before the team plan is posted."},
+{title:"Labyrinth",text:"🧭 LABYRINTH\nTry the following troop ratios (Infantry / Lancer / Marksman):\n\n• 50 / 10 / 40 – Land of Heroes\n• 50 / 15 / 35 – Cave of monsters\n• 60 / 20 / 20 – Luminous Mine\n• 50 / 20 / 30 – Research center\n• 60 / 15 / 25 – Gear Forge\n• 50 / 15 / 35 – Gaia Heart\n\nNote: These ratios work well up to a certain point. In later stages, you may need to make small adjustments (around ±5%) depending on the enemy lineup."},
 {title:"Fortress Battle",text:"🏰 FORTRESS BATTLE\nRegistration / battle: [date and UTC time]\nCoordinators: Shackleton and DP\nCheck your assigned group, arrive on time, and wait for the move and attack calls. Keep alliance chat open."},
 {title:"Stronghold Battle",text:"🛡️ STRONGHOLD BATTLE\nTarget: [stronghold]\nTime: [date and UTC time]\nCoordinators: Shackleton and DP\nOnly move or attack when called. Follow the assigned rally, garrison, and reinforcement roles."},
 {title:"Alliance Mobilization",text:"📋 ALLIANCE MOBILIZATION\nThis round’s target: [points / rank]\nChoose missions you can finish and claim rewards before the event ends. Check the event board for eligible tasks; contact [coordinator] with questions."},
-{title:"Frostfire Mine",text:"🔥 FROSTFIRE MINE\nMine time: [date and UTC time]\nGoal: [personal / alliance target]\nRegister and join on time. Follow the team’s mine assignments and current in-game rules. Notify [coordinator] if you cannot attend."},
+{title:"Frostfire Mine",text:"✨ FROSTFIRE MINE REFRESHER\nTip 12 • Frostfire Mine Event Guide\n\nParticipation Requirements: Unlocks at Furnace Level 16. This event takes place every two weeks. The event lasts 30 minutes, and troops lost during the event are not permanently lost.\n\nFixed Skill Upgrade Sequence: Left → Right → Left → Left → Right"},
 {title:"King of Icefield",text:"👑 KING OF ICEFIELD\nBattle window: [date and UTC time]\nOur objective: [objective]\nFollow the shield, relocation, and target calls from leadership. Do not expose troops or attack marked allies. Contact: [R4/R5]."},
-{title:"Mercenary Prestige",text:"🎯 MERCENARY PRESTIGE\nGroup time: [date and UTC time]\nTarget / level: [target]\nPost your help request with the target details. Join rallies only after checking the instructions from [coordinator]."},
+{title:"Mercenary Boss",text:"😈 MERCENARY BOSS\nWe summon it on: [date and UTC time]\nWhen the target appears, do not send a full army. ❌\n\n❗ Send a unit of ONE TROOP and no heroes. ❗\n❌ PLEASE attack only ONCE, then wait for instructions. ❗\n\n⚠ Why? The longer the boss lives, the more members can participate. Would I get better rewards for doing more damage? NO. Everyone receives the same rewards. Failure to cooperate can make fellow alliance members miss out on rewards. ⚠\n\nThank you."},
 {title:"Canyon Clash",text:"🏜️ CANYON CLASH\nMatch time: [date and UTC time]\nTeam / role: [assignment]\nBe ready before queue opens. Follow the lane and objective calls, and use alliance chat for coordination during the match."},
 {title:"Alliance event · attendance",text:"📣 EVENT ATTENDANCE CHECK\nEvent: [event name]\nTime: [date and UTC time]\nReply [JOIN / UNAVAILABLE] by [deadline]. Include your role or preferred group if relevant. Coordinator: [name]."}
 ],pl:[
@@ -1037,7 +1282,7 @@ const eventTemplates={en:[
 let language="en";
 function getLang(){const s=document.querySelector("#gtranslate_wrapper select");return s&&s.value==="pl"?"pl":"en"}
 const labels={en:{heading:"FRB Alliance & R4/R5 Tools",summary:"Copy-ready alliance messages and quick reference sheets",hint:"Choose a template, edit anything in brackets, then click Copy to paste it into alliance chat.",eventsTitle:"EVENTS · 16 message templates",messagesTitle:"Alliance message templates",sheetsTitle:"Quick reference sheets"},pl:{heading:"Narzędzia FRB dla sojuszu i R4/R5",summary:"Wiadomości do skopiowania i krótkie ściągi",hint:"Wybierz szablon, uzupełnij pola w nawiasach i kliknij Kopiuj, aby wkleić go na czacie sojuszu.",eventsTitle:"EVENTS · 16 szablonów wiadomości",messagesTitle:"Szablony wiadomości sojuszu",sheetsTitle:"Krótkie ściągi"}};
-const copyLimit=450;
+const copyLimit=900;
 function countLabel(n){return language==="pl"?`${n}/${copyLimit} znaków`:`${n}/${copyLimit} characters`}
 function addCounts(scope){document.querySelectorAll(`${scope} textarea`).forEach(t=>{const counter=t.parentElement.querySelector("[data-char-count]");if(counter)counter.textContent=countLabel(Array.from(t.value).length);t.addEventListener("input",()=>{if(counter)counter.textContent=countLabel(Array.from(t.value).length)})})}
 function render(){language=getLang();document.querySelector("#frb-event-templates").innerHTML=eventTemplates[language].map(m=>`<article class="frb-message-card"><h4>${m.title}</h4><textarea aria-label="${m.title}">${m.text}</textarea><p class="frb-char-count" data-char-count></p><button class="frb-copy-button" type="button" data-frb-copy-message>${copyLabel[language]}</button></article>`).join("");document.querySelector("#frb-message-templates").innerHTML=messages[language].map(m=>`<article class="frb-message-card"><h4>${m.title}</h4><span class="frb-owner">${m.owner}</span><textarea aria-label="${m.title}">${m.text}</textarea><p class="frb-char-count" data-char-count></p><button class="frb-copy-button" type="button" data-frb-copy-message>${copyLabel[language]}</button></article>`).join("");document.querySelector("#frb-quick-sheets").innerHTML=sheets[language].map(s=>`<article class="frb-sheet-card"><h4>${s.title}</h4><pre>${s.text}</pre><button class="frb-copy-button" type="button" data-frb-copy-sheet>${copyLabel[language]}</button></article>`).join("");addCounts("#frb-event-templates");addCounts("#frb-message-templates");document.querySelectorAll("[data-frb-tools]").forEach(el=>{el.textContent=labels[language][el.dataset.frbTools]||el.textContent})}
@@ -1047,7 +1292,464 @@ render();const wrapper=document.querySelector("#gtranslate_wrapper");if(wrapper)
 })();
 
 </script>
-</body></html>
+<style id="frostborn-elegant-gold-finish">
+/* Elegant winter palette: steel blue panels, warm gold hierarchy */
+:root{--bg:#081522!important;--panel:#14263b!important;--panel2:#1b3048!important;--line:#425d78!important;--ice:#eaf3ff!important;--blue:#a8cfff!important;--muted:#b2c0d0!important;--white:#f5f8fd!important;--gold:#edc66f!important}
+body{background:radial-gradient(ellipse at 50% -18%,rgba(106,153,202,.24),transparent 42%),linear-gradient(180deg,#13263b 0%,#0c1928 52%,#08131f 100%)!important;color:#f5f8fd}
+header{background:rgba(9,21,35,.97)!important;border-bottom:1px solid #a17b3c!important}
+.hero,.card,.notice,.modalbox,.field,.info-card,.primary-timers>.card,.sunfire-card,.timer-grid>.card{
+ background:linear-gradient(145deg,#1b3047 0%,#14263a 72%,#182a3c 100%)!important;
+ border-color:#536d87!important;
+}
+.hero{border-color:#a17b3c!important;box-shadow:0 18px 48px rgba(1,8,18,.48),0 0 22px rgba(198,157,79,.08)!important}
+.hero h1,.sectionhead h2,.card h3,.assignment-card h3{color:#edf4fc!important}
+.eyebrow,.tag,.info-label,.pet-info .info-label,.lighthouse-info .info-label{color:#e6c373!important}
+.search{background:#0c1928!important;border-color:#8b7045!important;color:#f5f8fd}
+.navbtn,.lang,.action{background:#172b40!important;border-color:#657b91!important;color:#f5f8fd}
+.navbtn.active{background:#263e58!important;border-color:#e0bc70!important;outline:1px solid #e0bc70!important}
+.action.primary{background:#294563!important;border-color:#c49b50!important}
+.action.subtle{border-color:#ba914a!important}
+.action:hover,.navbtn:hover{border-color:#f0d38d!important;background:#263f58!important}
+.primary-timers>.card,.sunfire-card{border-color:#c59a4e!important;box-shadow:0 10px 28px rgba(1,8,18,.35),0 0 16px rgba(210,172,95,.08)!important}
+.primary-timers .tag,.sunfire-card .tag{color:#f0d181!important}
+.primary-timers .timer,.sunfire-card .timer,.info-card strong{color:#ffdfa0!important}
+.primary-timers .muted,.sunfire-card small,.info-card small{color:#c4ced8!important}
+.info-card{border-color:#816b48!important;color:#d8e2ed!important}
+.info-label{letter-spacing:.12em}
+.timer,.timer small{font-variant-numeric:tabular-nums}
+.card.svs-featured-card,.card.svs-event-card{background:linear-gradient(145deg,#21364a 0%,#17283a 75%,#26333e 100%)!important;border:1px solid #d5ad5c!important;box-shadow:0 0 0 1px rgba(224,185,100,.23),0 12px 30px rgba(1,8,18,.35),0 0 22px rgba(202,157,72,.09)!important}
+.card.svs-featured-card:before,.card.svs-event-card:before{background:linear-gradient(180deg,#fff0bd,#c39442,#fff0bd)!important}
+.card.svs-featured-card .tag,.card.svs-event-card .tag{color:#f5d98f!important}
+.card.svs-featured-card h3,.card.svs-event-card h3{color:#fff0c5!important}
+.alliance-assignments>.assignment-card,.frb-alliance-tools{background:linear-gradient(145deg,#1c3045,#14263a 78%,#192b3d)!important;border:1px solid #b28b4b!important;box-shadow:0 8px 24px rgba(1,8,18,.28)!important}
+.assignment-card h3{color:#f3e2bd!important}
+.assignment-card>p{color:#c4d0de!important}
+.responsibility{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)!important;align-items:start!important;gap:10px 16px!important;border-color:#9f7d45!important;background:linear-gradient(105deg,rgba(39,57,73,.96),rgba(23,39,55,.98))!important}
+.responsibility span{min-width:0;color:#e5edf5!important;overflow-wrap:anywhere}
+.responsibility strong{min-width:0;color:#f0d184!important;text-shadow:none!important;overflow-wrap:anywhere}
+.frb-alliance-tools>summary{color:#f0d184!important}
+.frb-alliance-tools>summary:after{color:#f0d184!important}
+.frb-alliance-tools>summary small{color:#c1cbd5!important}
+.pill{background:#233b52!important;border-color:#6f8397!important;color:#e7eef5!important}
+.pill.public{background:#263f40!important;border-color:#698d79!important;color:#c2e3d2!important}
+input,select,textarea{color:#f5f8fd}
+a{color:#c5def8}
+@keyframes elegantWinterEntry{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.hero{animation:elegantWinterEntry .65s ease-out both}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(max-width:720px){.responsibility{grid-template-columns:1fr!important;gap:4px!important}.responsibility strong{text-align:left!important}}
+</style><style id="frostborn-preserved-gold-reference">
+/* Match the user's gold priority-card reference; blue replaces purple surfaces only */
+header{border-bottom-color:#425d78!important}
+.hero{border-color:#536d87!important}
+.action,.navbtn,.lang{border-color:#657b91!important}
+.action.subtle{border-color:#657b91!important}
+.primary-timers>.card{border-color:#536d87!important}
+.sunfire-card{border-color:#c99d48!important}
+.info-card{border-color:#536d87!important}
+.card.svs-featured-card,.card.svs-event-card{
+ background:linear-gradient(145deg,#1b3047 0%,#14263a 72%,#182a3c 100%)!important;
+ border:1px solid #c99d48!important;
+ box-shadow:0 0 0 1px rgba(224,185,100,.22),0 12px 30px rgba(1,8,18,.30)!important
+}
+.card.svs-featured-card:before,.card.svs-event-card:before{
+ content:"";position:absolute;inset:0 auto 0 0;width:4px;
+ background:linear-gradient(180deg,#ffe39a,#bd8b35)!important
+}
+.card.svs-featured-card .tag,.card.svs-event-card .tag{color:#f5d985!important}
+.card.svs-featured-card h3,.card.svs-event-card h3{color:#fff0bd!important}
+.card.svs-featured-card .action,.card.svs-event-card .action{
+ background:#14263a!important;border-color:#bd8b3e!important;color:#fff1c9!important
+}
+.alliance-assignments>.assignment-card,.frb-alliance-tools{border-color:#92734b!important}
+.responsibility{border-color:#84633f!important}
+.responsibility strong,.frb-alliance-tools>summary{color:#f2d18a!important}
+.frb-alliance-tools>summary:after{color:#f2d18a!important}
+.primary-timers .timer,.sunfire-card .timer{color:#f2d59b!important}
+</style><style id="hot-inspired-winter-hero">
+#home .hero{
+ position:relative;isolation:isolate;display:grid;place-items:center;
+ width:100vw;min-height:calc(100svh - 64px);margin: -30px 0 36px calc(50% - 50vw);
+ padding:clamp(46px,8vh,90px) 24px;overflow:hidden;border:0!important;border-radius:0!important;
+ background:none!important;
+ box-shadow:inset 0 -1px 0 rgba(209,176,111,.38)!important;text-align:center
+}
+#home .hero:before{display:none!important;content:none!important;background:none!important}
+#home .hero:after{display:none!important;content:none!important;background:none!important}
+@keyframes winterSnowDrift{to{background-position:center,center,83px 166px,-91px 148px}}
+@keyframes winterAurora{0%,100%{background-position:110% 0}50%{background-position:-120% 0}}
+#home .hero-content{position:relative;z-index:1;width:min(100%,950px);margin:auto}
+#home .hero .eyebrow{color:#c7ddf5!important;letter-spacing:.2em}
+#home .hero h1{
+ margin:18px auto 14px;color:#f0f6ff!important;font-size:clamp(50px,8vw,92px);
+ line-height:.98;letter-spacing:.015em;text-shadow:0 5px 32px rgba(172,207,241,.3);
+ animation:winterTitleReveal .9s cubic-bezier(.2,.75,.25,1) both
+}
+@keyframes winterTitleReveal{from{opacity:0;transform:translateY(22px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+#home .hero-intro{max-width:620px;margin:0 auto 22px;color:#d2e0ef;font-size:clamp(16px,2vw,20px)}
+#home .hero .search{display:block;width:min(100%,760px);margin:0 auto;padding:16px 19px;border-color:#7189a3!important;background:rgba(8,20,34,.72)!important;text-align:left}
+#home .hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+#home .hero-actions .action{min-width:190px;padding:12px 16px;letter-spacing:.06em;font-size:12px;font-weight:800}
+#home .hero-actions .action.primary{background:#294563!important;border-color:#8ba6c1!important}
+#home .hero-stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:40px}
+#home .hero-stat{min-width:185px;padding:13px 18px;border:1px solid rgba(148,171,196,.34);border-radius:12px;background:rgba(10,24,39,.62);backdrop-filter:blur(8px);text-align:left}
+#home .hero-stat span{display:block;color:#b5c8dd;font-size:10px;letter-spacing:.13em;font-weight:850}
+#home .hero-stat strong{display:block;margin-top:3px;color:#eef4fb;font-size:14px}
+#home .hero-scroll{margin-top:28px;color:#afc2d7;font-size:10px;letter-spacing:.16em}
+#home .hero-scroll span{display:block;margin-top:7px;font-size:22px;animation:scrollNudge 1.8s ease-in-out infinite}
+@keyframes scrollNudge{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+#home .sectionhead#timers{scroll-margin-top:90px}
+#home #featured{scroll-margin-top:90px}
+@media(max-width:720px){
+ #home .hero{min-height:calc(100svh - 60px);margin-top:-18px;padding:52px 18px 40px}
+ #home .hero h1{font-size:clamp(44px,14vw,68px)}
+ #home .hero-stats{gap:8px;margin-top:28px}
+ #home .hero-stat{min-width:min(100%,145px);flex:1;padding:10px 12px}
+ #home .hero-stat strong{font-size:12px}
+ #home .hero-actions .action{min-width:160px}
+}
+@media(prefers-reduced-motion:reduce){
+ #home .hero:before,#home .hero:after,#home .hero h1,#home .hero-scroll span{animation:none!important}
+}
+</style><style id="unified-card-style-from-reference">
+/* One consistent Frostborn card language across guides, events, timers and alliance panels */
+.card,.bear-card,.info-card,.assignment-card,.responsibility,.frb-alliance-tools,.gift-simple-card,.hero-card{
+ background:linear-gradient(145deg,#1c3045 0%,#172a3e 100%)!important;
+ border:1px solid #92734b!important;
+ box-shadow:0 8px 22px rgba(3,10,18,.22)!important;
+}
+.card h3,.assignment-card h3{color:#f0dfb8!important}
+.card p,.assignment-card>p{color:#c9d5e1!important}
+.card .tag,.info-label,.hero-tag{color:#f0cf82!important}
+.responsibility{background:linear-gradient(105deg,#203449,#192d41)!important}
+.responsibility span{color:#e5edf5!important}
+.responsibility strong{color:#f2cf7b!important}
+.action,.card button,.bear-card button,.assignment-card button{
+ background:#1a3046!important;border-color:#a78348!important;color:#f5f7fa!important
+}
+.action:hover,.card button:hover,.bear-card button:hover,.assignment-card button:hover{
+ background:#29435a!important;border-color:#e0c078!important
+}
+.card.svs-featured-card,.card.svs-event-card{
+ border-color:#c99d48!important;
+ box-shadow:0 0 0 1px rgba(224,185,100,.22),0 12px 30px rgba(1,8,18,.30)!important
+}
+.card.svs-featured-card .tag,.card.svs-event-card .tag{color:#f5d985!important}
+.card.svs-featured-card h3,.card.svs-event-card h3{color:#fff0bd!important}
+.card.svs-featured-card .action,.card.svs-event-card .action{
+ background:#14263a!important;border-color:#bd8b3e!important;color:#fff1c9!important
+}
+.pill{border-color:#927d58!important}
+</style><style id="frb-march-video-hero">
+#home .hero{background:none!important}
+#home .hero-video-wrap{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:#0b1b2b}
+#home .hero-video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 53%;opacity:1;filter:saturate(.82) contrast(1.08);transform:scale(1.035)}
+#home .hero-video-wrap:after{display:none!important;content:none!important;background:none!important}
+#home .hero:before{z-index:1;opacity:.58}
+#home .hero:after{z-index:1}
+#home .hero-content{z-index:2}
+#home .hero-motion-toggle{min-width:150px;border-color:#a78348!important;background:rgba(12,28,44,.72)!important;color:#f4e8ca!important}
+#home .hero-motion-toggle:hover{background:#29435a!important;border-color:#e0c078!important}
+@media(max-width:720px){#home .hero-video{object-position:center 50%;opacity:1}#home .hero-actions .hero-motion-toggle{min-width:0}}
+@media(prefers-reduced-motion:reduce){#home .hero-video{display:block!important}}
+</style><style id="frb-video-width-blue-timers">
+/* Align the cinematic hero with the page content */
+#home .hero{
+ width:100%!important;max-width:1280px!important;min-height:clamp(560px,76svh,790px)!important;
+ margin:-30px auto 36px!important;border:1px solid #92734b!important;border-radius:22px!important;
+ box-shadow:0 18px 48px rgba(1,8,18,.42),0 0 0 1px rgba(224,185,100,.12)!important
+}
+#home .hero-video{object-position:center 53%}
+#home .hero-video-wrap{border-radius:21px;overflow:hidden}
+@media(max-width:720px){#home .hero{min-height:640px!important;margin:-18px auto 28px!important;border-radius:16px!important}#home .hero-video-wrap{border-radius:15px}}
+
+/* Remove the remaining violet surfaces; use the shared winter-blue and gold palette */
+:root{--bg:#081522!important;--panel:#14283d!important;--panel2:#1c334a!important;--line:#536d83!important;--ice:#eaf3fc!important;--blue:#acd0f4!important;--muted:#b8c7d6!important;--white:#f5f8fc!important;--gold:#e8c878!important}
+body{background:radial-gradient(ellipse at 50% -18%,rgba(94,145,193,.22),transparent 42%),linear-gradient(180deg,#13263a 0%,#0c1928 52%,#08131f 100%)!important;color:#f5f8fc!important}
+header{background:rgba(9,21,35,.97)!important;border-bottom-color:#425d78!important}
+.navbtn,.lang,.action,.timer-settings,.hero-motion-toggle{
+ background:#162b40!important;border-color:#92734b!important;color:#f2f5f8!important
+}
+.navbtn.active{background:#263e57!important;border-color:#e0bc70!important;outline:1px solid #e0bc70!important}
+.action.primary{background:#29445f!important;border-color:#b18a49!important}
+.action.subtle{background:#162b40!important;border-color:#a78348!important}
+.navbtn:hover,.action:hover,.timer-settings:hover{background:#29435a!important;border-color:#e0c078!important}
+.card,.bear-card,.info-card,.assignment-card,.responsibility,.frb-alliance-tools,.gift-simple-card,.hero-card,.notice,.modalbox,.field,.form-control{
+ background:linear-gradient(145deg,#1c3045 0%,#172a3e 100%)!important;border-color:#92734b!important
+}
+.card h3,.assignment-card h3{color:#f0dfb8!important}
+.card p,.assignment-card>p,.muted{color:#c4d0dc!important}
+.tag,.info-label,.eyebrow,.hero-tag{color:#f0cf82!important}
+.tag{
+ display:inline-block;padding:5px 9px;border:1px solid #9a7845!important;border-radius:8px;
+ background:linear-gradient(105deg,rgba(177,133,58,.25),rgba(97,76,42,.40))!important;
+ text-shadow:0 1px 8px rgba(224,185,100,.18)
+}
+.search,input,select,textarea,.field,.form-control{
+ background:#0d1d2d!important;border-color:#6d7f91!important;color:#f3f7fb!important
+}
+input::placeholder,textarea::placeholder{color:#aebdca!important}
+select option{background:#12283c;color:#f3f7fb}
+.pill{background:#20384d!important;border-color:#927d58!important;color:#edf3f8!important}
+.pill.public{background:#213d39!important;border-color:#698b74!important;color:#d3eadb!important}
+:is(.mini,.note,.rule,.callout,.box,.diagram,.mode,.day,.guide-figure,figure,.table-wrap,.gift-info,.gift-maintainer-tools,.gift-code-card,.gift-claim-panel,.gift-simple-card,.pet-stats,.unlock-flow span){
+ background:linear-gradient(145deg,#20364a,#172a3e)!important;border-color:#806d4c!important;color:#e8eef4!important
+}
+:is(.guide-table th,.ac-guide th,.pets-guide th,.fc-guide th,.cc-guide th,.as-guide th,.merc-guide th,.fs-guide th,.bia-guide th,.foundry-guide th){
+ background:#294158!important;border-color:#806d4c!important;color:#f0d18a!important
+}
+a{color:#c9e0f6}
+
+/* Give server timers a clear visual hierarchy without flashing */
+.sectionhead h2{color:#f2f5f8!important}
+.primary-timers>.card{
+ position:relative;min-height:205px!important;overflow:hidden;
+ border:1px solid #bb914a!important;
+ background:linear-gradient(145deg,#20364b 0%,#172c40 74%,#1e3040 100%)!important;
+ box-shadow:0 12px 30px rgba(1,8,18,.34),0 0 20px rgba(204,163,82,.12)!important
+}
+.primary-timers>.card:before{
+ content:"";position:absolute;inset:0 auto 0 0;width:4px;
+ background:linear-gradient(180deg,#f4dda1,#b78c42,#f4dda1)
+}
+.primary-timers .tag{color:#f4d78d!important}
+.primary-timers .timer,.bear-card .timer{
+ color:#ffe2a0!important;text-shadow:0 2px 18px rgba(239,194,100,.20);
+ font-size:clamp(34px,4vw,48px)!important;font-variant-numeric:tabular-nums
+}
+.primary-timers .muted,.sunfire-card small{color:#d1dbe4!important}
+.sunfire-card h3{color:#fff0c7!important}
+.info-card{border-color:#806d4c!important}
+.info-card strong{color:#f3d38c!important;font-variant-numeric:tabular-nums}
+.bear-card{border-color:#aa8448!important;background:linear-gradient(145deg,#1c3045,#172a3e)!important}
+.bear-card .tag{color:#f0cf82!important}
+.timer-settings{border:1px solid #a78348!important}
+@media(max-width:720px){.primary-timers>.card{min-height:170px!important}.primary-timers .timer,.bear-card .timer{font-size:clamp(30px,9vw,40px)!important}}
+</style><style id="frb-theme-final-unified">
+/* Content width and tidy rhythm */
+main{max-width:1280px!important}
+#home .hero{width:100%!important;max-width:1280px!important;min-height:clamp(560px,76svh,790px)!important;margin:-30px auto 36px!important;border:1px solid #92734b!important;border-radius:22px!important}
+#home .hero-video-wrap{border-radius:21px;background:#0b1b2b}
+#home .hero-video{object-position:center 53%}
+#home .hero-content{z-index:2}
+@media(max-width:720px){#home .hero{min-height:640px!important;margin:-18px auto 28px!important;border-radius:16px!important}#home .hero-video-wrap{border-radius:15px}}
+
+/* One coherent winter palette across navigation, pages, guides and tools */
+:root{--bg:#081522!important;--panel:#14283d!important;--panel2:#1c334a!important;--line:#536d83!important;--ice:#eaf3fc!important;--blue:#acd0f4!important;--muted:#b8c7d6!important;--white:#f5f8fc!important;--gold:#e8c878!important}
+body{background:radial-gradient(ellipse at 50% -18%,rgba(94,145,193,.22),transparent 42%),linear-gradient(180deg,#13263a 0%,#0c1928 52%,#08131f 100%)!important;color:#f5f8fc!important}
+header{background:rgba(9,21,35,.97)!important;border-bottom-color:#425d78!important}
+header .brand-mark img{filter:drop-shadow(0 0 8px rgba(70,174,255,.55))!important}
+header .navbtn,header .lang,header .action,button.navbtn,.navbtn{
+ background:linear-gradient(145deg,#17324b,#10253a)!important;border-color:#876d43!important;color:#eff5fb!important
+}
+header .navbtn.active,header .navbtn[aria-current="page"],.navbtn.active{
+ background:linear-gradient(140deg,#315879,#1b3852)!important;border-color:#e0bc70!important;
+ outline:1px solid rgba(224,188,112,.7)!important;box-shadow:0 0 15px rgba(100,169,219,.22)!important
+}
+header .navbtn:hover,header .action:hover,.navbtn:hover,.action:hover{
+ background:linear-gradient(145deg,#315674,#1b3852)!important;border-color:#e0c078!important
+}
+a.action,button.action,.page .action,.modalbox .action,.gift-card-actions .action{
+ background:linear-gradient(145deg,#17324b,#10253a)!important;border:1px solid #a78348!important;color:#f0f5f9!important
+}
+a.action.primary,button.action.primary,#giftcenter a[data-gift="officialPortal"]{
+ background:linear-gradient(110deg,#d7b465,#f0d58d)!important;border-color:#5d79a8!important;color:#15283a!important;
+ box-shadow:0 0 0 2px rgba(78,131,184,.55),0 6px 17px rgba(6,16,27,.26)!important
+}
+.page .card,.card,.bear-card,.info-card,.assignment-card,.responsibility,.frb-alliance-tools,.gift-simple-card,.hero-card,.notice,.modalbox,.field,.form-control{
+ background:linear-gradient(145deg,#1c3045 0%,#172a3e 100%)!important;border-color:#92734b!important
+}
+.card h3,.assignment-card h3{color:#f0dfb8!important}
+.card p,.assignment-card>p,.muted{color:#c4d0dc!important}
+.tag,.info-label,.eyebrow,.hero-tag{color:#f0cf82!important}
+.tag{
+ display:inline-block;padding:5px 9px;border:1px solid #9a7845!important;border-radius:8px;
+ background:linear-gradient(105deg,rgba(177,133,58,.25),rgba(97,76,42,.40))!important;
+ text-shadow:0 1px 8px rgba(224,185,100,.18)
+}
+input,select,textarea,.field,.form-control,.hero-filters input,.hero-filters select{
+ background:#0d1d2d!important;border-color:#6d7f91!important;color:#f3f7fb!important
+}
+input::placeholder,textarea::placeholder{color:#aebdca!important}
+select option{background:#12283c;color:#f3f7fb}
+.pill{background:#20384d!important;border-color:#927d58!important;color:#edf3f8!important}
+.pill.public{background:#213d39!important;border-color:#698b74!important;color:#d3eadb!important}
+
+/* Blue hero database panel, filters and profile chips */
+#heroes .hero-legend{
+ background:linear-gradient(120deg,#1c334b,#12263b 72%,#20364b)!important;
+ border:1px solid #92734b!important;color:#eaf2f8!important
+}
+#heroes .hero-legend p{color:#d1dce6!important}
+#heroes .hero-filters select,#heroes .hero-filters input{background:#0d1d2d!important;border-color:#6d7f91!important;color:#f3f7fb!important}
+#heroes .hero-card{background:linear-gradient(145deg,#20374d,#172a3e)!important;border-color:#92734b!important}
+#heroes .hero-portrait{background:radial-gradient(circle at 50% 30%,#395878,#172a3e 72%)!important}
+#heroes .hero-chip{background:#24435e!important;border-color:#6487a4!important;color:#e4f0fb!important}
+#heroes .hero-chip.class,#heroes .hero-use{background:#1c3c51!important;border-color:#5d8198!important;color:#d6edf8!important}
+#heroes .hero-use.pending-use{background:#26384b!important;border-color:#8e7549!important;color:#f0d38c!important}
+#heroes .hero-portrait .no-portrait{color:#b9dcf6!important}
+#heroes .hero-tag.combat{background:#24445f!important;border-color:#6484a0!important;color:#e8f2fa!important}
+#heroes .hero-tag.growth{background:#1e4743!important;border-color:#648d77!important;color:#d7eedc!important}
+#heroes .hero-tag.pending{background:#473b24!important;border-color:#a08042!important;color:#ffe4a0!important}
+
+/* Replace violet panels inside event and development guides */
+:is(.bear-guide,.cj-guide,.ac-guide,.mob-guide,.merc-guide,.fs-guide,.bia-guide,.foundry-guide,.pets-guide,.fc-guide,.cc-guide,.as-guide,.lab-guide,.arena-guide,.svs-guide,.koi-guide) :is(.card,.mini,.note,.rule,.callout,.box,.diagram,.mode,.day,figure,.table-wrap){
+ background:linear-gradient(145deg,#20364a,#172a3e)!important;border-color:#806d4c!important;color:#e8eef4!important
+}
+:is(.bear-guide,.cj-guide,.ac-guide,.mob-guide,.merc-guide,.fs-guide,.bia-guide,.foundry-guide,.pets-guide,.fc-guide,.cc-guide,.as-guide,.lab-guide,.arena-guide,.svs-guide,.koi-guide) :is(th){
+ background:#294158!important;border-color:#806d4c!important;color:#f0d18a!important
+}
+.new-event-guide .ev-note{background:linear-gradient(120deg,#20364a,#172a3e)!important;border-color:#806d4c!important;color:#e8eef4!important}
+.new-event-guide h3{color:#f0dfb8!important}
+
+/* Remove violet from gift-code actions while retaining the gold portal button */
+#giftcenter .gift-info,#giftcenter .gift-maintainer-tools,#giftcenter .gift-code-card,#giftcenter .gift-claim-panel,#giftcenter .gift-simple-card{
+ background:linear-gradient(145deg,#1c3045,#172a3e)!important;border-color:#92734b!important
+}
+#giftcenter .gift-code-text{color:#f1f5f9!important}
+#giftcenter .gift-card-actions .action,#giftcenter .gift-copy-button,#giftcenter button{
+ background:linear-gradient(145deg,#17324b,#10253a)!important;border-color:#a78348!important;color:#f0f5f9!important
+}
+#giftcenter a[data-gift="officialPortal"]{border-color:#5d79a8!important}
+
+/* Make timer panels stand apart with distinct cool-to-gold gradients */
+.sectionhead h2{color:#f2f5f8!important}
+.primary-timers>.card{
+ position:relative;min-height:205px!important;overflow:hidden;
+ border:1px solid #c09a53!important;
+ background:linear-gradient(112deg,#12263a 0%,#1c3a55 68%,#4e442f 100%)!important;
+ box-shadow:0 12px 30px rgba(1,8,18,.36),0 0 22px rgba(204,163,82,.17)!important
+}
+.primary-timers>.card:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#f4dda1,#b78c42,#f4dda1)}
+.primary-timers .tag{color:#f4d78d!important}
+.primary-timers .timer,.bear-card .timer{
+ color:#ffe2a0!important;text-shadow:0 2px 18px rgba(239,194,100,.24);
+ font-size:clamp(34px,4vw,48px)!important;font-variant-numeric:tabular-nums
+}
+.primary-timers .muted,.sunfire-card small{color:#d1dbe4!important}
+.sunfire-card h3{color:#fff0c7!important}
+.info-card{border-color:#806d4c!important;background:linear-gradient(110deg,#172c42,#21384d)!important}
+.info-card strong{color:#f3d38c!important;font-variant-numeric:tabular-nums}
+.bear-card{border-color:#aa8448!important;background:linear-gradient(115deg,#162a3e 0%,#213b52 72%,#443b2b 100%)!important}
+.bear-card .tag{color:#f0cf82!important}
+.timer-settings{border:1px solid #a78348!important}
+
+/* Straight, even card grids and aligned actions */
+.grid{align-items:stretch}
+.grid>.card,.grid>article.card{display:flex;flex-direction:column;height:100%;min-width:0}
+.grid>.card>p,.grid>article.card>p{margin-bottom:14px}
+.grid>.card>.action,.grid>article.card>.action{margin-top:auto;align-self:flex-start}
+.primary-timers,.bear-timers,.timer-grid{align-items:stretch}
+@media(max-width:720px){
+ .primary-timers>.card{min-height:170px!important}
+ .primary-timers .timer,.bear-card .timer{font-size:clamp(30px,9vw,40px)!important}
+ .grid>.card,.grid>article.card{height:auto}
+}
+@media(prefers-reduced-motion:reduce){#home .hero-video{display:block!important}}
+</style><style id="frb-final-gradient-refine">
+/* Timers: nearly solid midnight navy, with only a restrained lift at the far edge */
+.primary-timers>.card{
+ background:linear-gradient(105deg,#0b1c2e 0%,#10243a 76%,#142b40 93%,#252b31 100%)!important;
+ border-color:#b18b4d!important;
+ box-shadow:0 12px 28px rgba(1,8,18,.40),0 0 12px rgba(204,163,82,.07)!important
+}
+.primary-timers>.card:before{background:linear-gradient(180deg,#ecd798,#a9823f,#ecd798)!important}
+.primary-timers .timer,.bear-card .timer{color:#f5d78f!important;text-shadow:0 2px 12px rgba(239,194,100,.14)!important}
+.info-card{background:linear-gradient(105deg,#0c1e30 0%,#10243a 82%,#162c40 100%)!important;border-color:#826b47!important}
+.bear-card{background:linear-gradient(105deg,#0b1c2e 0%,#11273d 84%,#1a2b38 100%)!important;border-color:#a58249!important}
+
+/* Deep navy navigation, with blue for the selected section; preserve gold outlines */
+header nav .navbtn,header nav button.navbtn,header nav a.navbtn,header nav .lang,header nav select.lang{
+ background:linear-gradient(180deg,#0b1b2b 0%,#081522 100%)!important;
+ border-color:#8a7047!important;color:#e9f0f7!important;
+ box-shadow:0 2px 8px rgba(0,0,0,.22)!important
+}
+header nav .navbtn.active,header nav .navbtn[aria-current="page"],header nav button.navbtn.active{
+ background:linear-gradient(145deg,#1c3c59 0%,#10263b 100%)!important;
+ border-color:#d1ad62!important;color:#fff0c7!important;
+ box-shadow:0 0 0 1px rgba(209,173,98,.38),0 0 12px rgba(72,145,201,.16)!important
+}
+header nav .navbtn:hover,header nav button.navbtn:hover,header nav a.navbtn:hover{
+ background:linear-gradient(145deg,#17344e,#0d2033)!important;border-color:#bd984f!important
+}
+header nav .lang,header nav select.lang{
+ background:linear-gradient(110deg,#d8b96b,#e8d08e)!important;
+ border-color:#476480!important;color:#13263a!important
+}
+
+/* The Lighthouse mark uses an icy blue glyph rather than a purple emoji */
+.lighthouse-info .info-label{color:#a9d5f4!important}
+</style><style id="frb-glass-hero-unified">
+#home .hero-actions .action,
+#home .hero-actions .action.primary,
+#home .hero-actions .action.subtle,
+#home .hero-stats .hero-stat{
+ background:rgba(11,28,45,.60)!important;
+ border:1px solid rgba(164,194,220,.42)!important;
+ border-radius:10px!important;
+ color:#eef4fa!important;
+ box-shadow:0 8px 24px rgba(2,9,17,.25),inset 0 1px rgba(255,255,255,.08)!important;
+ backdrop-filter:blur(12px) saturate(125%);
+ -webkit-backdrop-filter:blur(12px) saturate(125%);
+}
+#home .hero-actions .action,
+#home .hero-actions .action.primary,
+#home .hero-actions .action.subtle{
+ min-width:190px;min-height:46px;
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;
+ text-decoration:none!important;letter-spacing:.07em
+}
+#home .hero-stats .hero-stat{min-width:185px}
+#home .hero-stats .hero-stat span{color:#b8cde0!important}
+#home .hero-stats .hero-stat strong{color:#f1f5f9!important}
+#home .hero-actions .action:hover{
+ background:rgba(28,57,80,.70)!important;
+ border-color:rgba(215,184,119,.72)!important;
+ color:#fff4d6!important;
+ transform:translateY(-2px)
+}
+#home .hero-actions .action span{color:#e6cc8c}
+@media(max-width:720px){
+ #home .hero-actions .action,#home .hero-actions .action.primary,#home .hero-actions .action.subtle{min-width:160px}
+ #home .hero-stats .hero-stat{min-width:0}
+}
+</style><style id="frb-brand-tagline-blue">
+header .brand-sub,.brand-sub{
+ color:#b8daf4!important;
+ text-shadow:0 0 10px rgba(83,165,222,.20)!important
+}
+</style>
+
+<style id="frb-hero-video-authoritative">
+/* One source for the home hero background: the supplied MP4 video. */
+#home .hero{position:relative!important;isolation:isolate!important;overflow:hidden!important;background:transparent!important}
+#home .hero:before,#home .hero:after{display:none!important;content:none!important;background:none!important;animation:none!important}
+#home .hero-video-wrap{display:block!important;position:absolute!important;inset:0!important;z-index:0!important;overflow:hidden!important;background:transparent!important;border-radius:inherit!important;pointer-events:none!important}
+#home .hero-video-wrap:before,#home .hero-video-wrap:after{display:none!important;content:none!important;background:none!important}
+#home .hero-video{display:block!important;position:absolute!important;inset:0!important;z-index:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 53%!important;opacity:1!important;visibility:visible!important;filter:none!important;transform:none!important}
+#home .hero-content{position:relative!important;z-index:2!important}
+@media(prefers-reduced-motion:reduce){#home .hero-video{display:block!important}}
+</style>
+
+<script id="homepage-server-timeline-script">
+(()=>{
+ const events=[{"key":"state-day-0","icon":"⚔️","day":0,"title":"Gen 1 Heroes","kind":"hero","detail":"Generation 1 heroes: Jeronimo, Molly, Zinman, Natalia"},{"key":"state-day-40","icon":"⚔️","day":40,"title":"Gen 2 Heroes + Legendary Hero Gear","kind":"event","detail":"Generation 2 heroes: Flint, Philly, Alonso · Legendary Hero Gear"},{"key":"state-day-53","icon":"🏆","day":53,"title":"Sunfire Castle","kind":"event","detail":"Sunfire Castle"},{"key":"state-day-54","icon":"🐾","day":54,"title":"Pets Gen 1","kind":"pet","detail":"Pet generation 1: Cave Hyena, Arctic Wolf, Musk Ox"},{"key":"state-day-60","icon":"🔥","day":60,"title":"Fire Crystal Age","kind":"fire","detail":"Fire Crystal Age begins"},{"key":"state-day-80","icon":"🏆","day":80,"title":"SvS + King of Icefield","kind":"event","detail":"State vs State (SvS) and King of Icefield"},{"key":"state-day-90","icon":"🐾","day":90,"title":"Pets Gen 2","kind":"pet","detail":"Pet generation 2: Titan Roc, Giant Tapir"},{"key":"state-day-120","icon":"⚔️","day":120,"title":"Gen 3 Heroes + Experts","kind":"event","detail":"Generation 3 heroes: Logan, Mia, Greg · Experts: Holger, Agnes, Cyrille"},{"key":"state-day-140","icon":"🐾","day":140,"title":"Pets Gen 3","kind":"pet","detail":"Pet generation 3: Snow Leopard, Giant Elk"},{"key":"state-day-150","icon":"🔥","day":150,"title":"Furnace FC5 + Lab","kind":"fire","detail":"Furnace FC5 and Fire Crystal Laboratory"},{"key":"state-day-160","icon":"✨","day":160,"title":"Expert","kind":"event","detail":"Expert: Romulus"},{"key":"state-day-180","icon":"🛡️","day":180,"title":"Legendary Chief Gear","kind":"gear","detail":"Legendary Chief Gear"},{"key":"state-day-195","icon":"⚔️","day":195,"title":"Gen 4 Heroes","kind":"hero","detail":"Generation 4 heroes: Ahmose, Reina, Lynn"},{"key":"state-day-200","icon":"🐾","day":200,"title":"Pets Gen 4–5 + Experts","kind":"event","detail":"Pet generations 4–5: Cave Lion, Snow Ape · Experts: Valeria, Baldur, Fabian"},{"key":"state-day-220","icon":"🔥","day":220,"title":"War Academy + FC Lab 5","kind":"fire","detail":"War Academy and FC Lab 5"},{"key":"state-day-230","icon":"✨","day":230,"title":"Experts","kind":"event","detail":"Experts: Kathy, Ronne"},{"key":"state-day-270","icon":"⚔️","day":270,"title":"Gen 5 Heroes","kind":"hero","detail":"Generation 5 heroes: Hector, Norah, Gwen"},{"key":"state-day-280","icon":"🐾","day":280,"title":"Pets Gen 6–7","kind":"pet","detail":"Pet generations 6–7: Iron Rhino, Saber-tooth Tiger"},{"key":"state-day-315","icon":"🔥","day":315,"title":"FC8 + Lab 6","kind":"fire","detail":"Furnace FC8, FC Lab 6, daily mission grants 20 Fire Crystals"},{"key":"state-day-360","icon":"⚔️","day":360,"title":"Gen 6 Heroes","kind":"hero","detail":"Generation 6 heroes: Wu Ming, Renee, Wayne"},{"key":"state-day-370","icon":"🐾","day":370,"title":"Pets Gen 8–9","kind":"pet","detail":"Pet generations 8–9: Frost Gorilla, Mammoth"},{"key":"state-day-440","icon":"⚔️","day":440,"title":"Gen 7 Heroes","kind":"hero","detail":"Generation 7 heroes: Edith, Gordon, Bradley"},{"key":"state-day-450","icon":"🐾","day":450,"title":"Pets Gen 10","kind":"pet","detail":"Pet generation 10: Frostscale Chameleon"},{"key":"state-day-500","icon":"🔥","day":500,"title":"Furnace FC10","kind":"fire","detail":"Furnace FC10"},{"key":"state-day-520","icon":"⚔️","day":520,"title":"Gen 8 Heroes","kind":"hero","detail":"Generation 8 heroes: Gatot, Sonya, Hendrik"},{"key":"state-day-600","icon":"⚔️","day":600,"title":"Gen 9 Heroes","kind":"hero","detail":"Generation 9 heroes: Magnus, Fred, Xura"},{"key":"state-day-680","icon":"⚔️","day":680,"title":"Gen 10 Heroes","kind":"hero","detail":"Generation 10 heroes; T12 troops arrive: Gregory, Freya, Blanchette; T12 troops arrive"},{"key":"state-day-760","icon":"⚔️","day":760,"title":"Gen 11 Heroes","kind":"hero","detail":"Generation 11 heroes: Eleonora, Lloyd, Rufus"},{"key":"state-day-840","icon":"⚔️","day":840,"title":"Gen 12 Heroes","kind":"hero","detail":"Generation 12 heroes: Hervor, Karol, Ligeia"},{"key":"state-day-920","icon":"⚔️","day":920,"title":"Gen 13 Heroes","kind":"hero","detail":"Generation 13 heroes: Gisela, Flora, Vulcanus"},{"key":"state-day-1000","icon":"⚔️","day":1000,"title":"Gen 14 Heroes","kind":"hero","detail":"Generation 14 heroes: Elif, Dominic, Cara"},{"key":"state-day-1080","icon":"⚔️","day":1080,"title":"Gen 15 Heroes","kind":"hero","detail":"Generation 15 heroes: Hank, Estrella, Viveca"},{"key":"state-day-1160","icon":"⚔️","day":1160,"title":"Gen 16 Heroes","kind":"hero","detail":"Generation 16 heroes: Seigel, Ursar, Aisling"},{"key":"state-day-1240","icon":"⚔️","day":1240,"title":"Gen 17 Heroes","kind":"hero","detail":"Generation 17 heroes: Aiden, Bertha, Eleanor; Estimated milestone"}];
+ const start=document.getElementById('homepage-server-start'),track=document.getElementById('homepage-timeline-track'),detail=document.getElementById('homepage-timeline-detail');if(!start||!track||!detail)return;
+ const currentDay=()=>{const now=new Date(),today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate()),opened=new Date(start.value+'T00:00:00Z').getTime();return Math.floor((today-opened)/86400000)};
+ const dateAt=day=>{const d=new Date(start.value+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+day);return d.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})};
+ let selected=events.findIndex(e=>e.day>=currentDay());if(selected<0)selected=events.length-1;
+ function showDetail(){const e=events[selected],today=currentDay(),gap=e.day-today,when=gap===0?'Today · '+dateAt(e.day):gap>0?'In about '+gap+' days · '+dateAt(e.day):'Reached '+Math.abs(gap)+' days ago · '+dateAt(e.day);detail.dataset.key=e.key;detail.dataset.icon=e.icon;detail.innerHTML='<div class="detail-top"><span class="detail-day">Day '+e.day+'</span><h3 class="detail-title">'+e.title+'</h3></div><p>'+e.detail+'</p><p class="detail-when">'+when+'</p>'}
+ function paint(){const day=Math.max(0,currentDay());document.getElementById('homepage-timeline-day').textContent='Day '+day;track.innerHTML='';events.forEach((e,i)=>{const b=document.createElement('button');b.type='button';b.className='timeline-stop';b.dataset.key=e.key;b.dataset.kind=e.kind;b.dataset.state=e.day<day?'past':e.day===day?'current':'future';b.setAttribute('aria-pressed',i===selected?'true':'false');b.setAttribute('aria-label','Day '+e.day+': '+e.title);b.innerHTML='<span class="stop-day">Day '+e.day+'</span><span class="stop-icon" aria-hidden="true">'+e.icon+'</span><i class="stop-dot" aria-hidden="true"></i><span class="stop-label">'+e.title+'</span>';b.addEventListener('click',()=>{selected=i;showDetail();track.querySelectorAll('.timeline-stop').forEach((x,j)=>x.setAttribute('aria-pressed',j===selected?'true':'false'))});track.appendChild(b)});let progress=0;if(day>=events[events.length-1].day)progress=1;else if(day>0){let i=events.findIndex((e,j)=>j<events.length-1&&day>=e.day&&day<=events[j+1].day);if(i<0)i=0;progress=(i+(day-events[i].day)/(events[i+1].day-events[i].day))/(events.length-1)}const left=(8+Math.max(0,track.scrollWidth-16)*progress)+'px',pin=document.createElement('i'),label=document.createElement('span');pin.className='timeline-current';pin.style.left=left;pin.setAttribute('aria-hidden','true');label.className='timeline-current-label';label.style.left=left;label.textContent='Today · Day '+day;label.setAttribute('aria-hidden','true');track.append(pin,label);showDetail()}
+ start.addEventListener('change',()=>{const d=currentDay(),i=events.findIndex(e=>e.day>=d);selected=i<0?events.length-1:Math.max(0,i);paint()});paint();setTimeout(()=>{const active=track.querySelector('[aria-pressed="true"]');if(active)active.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'})},120);
+})();
+</script><script src="assets/dreamscape-trainer.js"></script><script src="assets/marvelous-fantasia.js"></script></body></html>
+
+
+
+
+
+
+
 
 
 
