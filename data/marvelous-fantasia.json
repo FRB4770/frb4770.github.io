@@ -1,0 +1,44 @@
+{
+  "name": "Marvelous Fantasia",
+  "source": "https://wostools.net/games/marvelous-fantasia",
+  "checked": "2026-11-21",
+  "type": "Whiteout Survival Honor Festival mini-game; unofficial practice mode",
+  "rules": {
+    "selectableTiles": "A tile can be selected when no other tile covers it.",
+    "storageSlots": 7,
+    "matchCount": 3,
+    "matching": "Three identical tiles in storage clear automatically.",
+    "win": "Clear every board tile with storage empty.",
+    "loss": "The run ends when all storage slots are occupied without a match.",
+    "helpers": {
+      "Withdraw": "Return the last stored tile to the board.",
+      "Reconstruct": "Shuffle the remaining board tiles.",
+      "Remove": "Send the three most accessible tiles to storage."
+    }
+  },
+  "eventFacts": {
+    "eventRotation": "Honor Festival",
+    "rewardChestLevels": [
+      1,
+      3,
+      5,
+      10,
+      15,
+      20
+    ],
+    "continuesPastLevel20": true,
+    "helperItems": "Withdraw, Reconstruct, and Remove are real event items; the source page says Marvelous Boost packs may provide additional copies while the event is live."
+  },
+  "practiceMode": {
+    "boardLayouts": "Procedurally generated; they do not match exact live-event layouts.",
+    "difficulty": "Increases as the player advances.",
+    "visualAssets": "Original inline vector tile illustrations created for this package; no source-site artwork or code included.",
+    "helperUse": "One use of each helper per practice level, for balance. This practice limit is a local design choice, not an official game rule.",
+    "leaderboard": "Not included; the package has no connected backend."
+  },
+  "leaderboard": {
+    "sourcePage": "Best level reached per player; signed-in players can opt in to publish under a chosen public name; the page states real names and email addresses are not shown.",
+    "localPackage": "No login, upload, or leaderboard submission is included in this standalone practice game."
+  },
+  "tutorial": "The source page links a video tutorial; the linked video content was not reproduced."
+}

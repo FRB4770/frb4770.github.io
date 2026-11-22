@@ -1,0 +1,499 @@
+{
+  "title": "Whiteout Survival state-age milestones",
+  "schemaVersion": 1,
+  "defaultStateAgeDays": 35,
+  "units": "state days from state opening",
+  "sourceChecked": "2026-11-21",
+  "sources": [
+    {
+      "name": "ClashHaven Whiteout Survival state timeline",
+      "url": "https://www.clashhaven.com/whiteout-survival/state-timeline",
+      "role": "Reference page for extracted milestone data."
+    },
+    {
+      "name": "Whiteout Survival Wiki server timeline",
+      "url": "https://www.whiteoutsurvival.wiki/server-timeline-server-age/",
+      "role": "Underlying data source cited by ClashHaven."
+    }
+  ],
+  "notes": [
+    "Milestone days are approximate and may vary with game updates or state schedules.",
+    "Generation 17 at day 1240 is an estimate, not a confirmed unlock date.",
+    "Factual milestone data only; no page text, site design, code, or hero artwork copied."
+  ],
+  "milestones": [
+    {
+      "day": 0,
+      "category": "heroes",
+      "label": "Generation 1 heroes",
+      "heroes": [
+        {
+          "name": "Jeronimo",
+          "class": "Infantry"
+        },
+        {
+          "name": "Molly",
+          "class": "Lancer"
+        },
+        {
+          "name": "Zinman",
+          "class": "Marksman"
+        },
+        {
+          "name": "Natalia",
+          "class": "Infantry"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "category": "heroes",
+      "label": "Generation 2 heroes",
+      "heroes": [
+        {
+          "name": "Flint",
+          "class": "Infantry"
+        },
+        {
+          "name": "Philly",
+          "class": "Lancer"
+        },
+        {
+          "name": "Alonso",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "category": "gear",
+      "label": "Legendary Hero Gear"
+    },
+    {
+      "day": 53,
+      "category": "event",
+      "label": "Sunfire Castle"
+    },
+    {
+      "day": 54,
+      "category": "pets",
+      "label": "Pet generation 1",
+      "pets": [
+        "Cave Hyena",
+        "Arctic Wolf",
+        "Musk Ox"
+      ]
+    },
+    {
+      "day": 60,
+      "category": "fireCrystal",
+      "label": "Fire Crystal Age begins"
+    },
+    {
+      "day": 80,
+      "category": "event",
+      "label": "State vs State (SvS) and King of Icefield"
+    },
+    {
+      "day": 90,
+      "category": "pets",
+      "label": "Pet generation 2",
+      "pets": [
+        "Titan Roc",
+        "Giant Tapir"
+      ]
+    },
+    {
+      "day": 120,
+      "category": "heroes",
+      "label": "Generation 3 heroes",
+      "heroes": [
+        {
+          "name": "Logan",
+          "class": "Infantry"
+        },
+        {
+          "name": "Mia",
+          "class": "Lancer"
+        },
+        {
+          "name": "Greg",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 120,
+      "category": "experts",
+      "label": "Experts",
+      "names": [
+        "Holger",
+        "Agnes",
+        "Cyrille"
+      ]
+    },
+    {
+      "day": 140,
+      "category": "pets",
+      "label": "Pet generation 3",
+      "pets": [
+        "Snow Leopard",
+        "Giant Elk"
+      ]
+    },
+    {
+      "day": 150,
+      "category": "fireCrystal",
+      "label": "Furnace FC5 and Fire Crystal Laboratory"
+    },
+    {
+      "day": 160,
+      "category": "experts",
+      "label": "Expert",
+      "names": [
+        "Romulus"
+      ]
+    },
+    {
+      "day": 180,
+      "category": "gear",
+      "label": "Legendary Chief Gear"
+    },
+    {
+      "day": 195,
+      "category": "heroes",
+      "label": "Generation 4 heroes",
+      "heroes": [
+        {
+          "name": "Ahmose",
+          "class": "Infantry"
+        },
+        {
+          "name": "Reina",
+          "class": "Lancer"
+        },
+        {
+          "name": "Lynn",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 200,
+      "category": "pets",
+      "label": "Pet generations 4–5",
+      "pets": [
+        "Cave Lion",
+        "Snow Ape"
+      ]
+    },
+    {
+      "day": 200,
+      "category": "experts",
+      "label": "Experts",
+      "names": [
+        "Valeria",
+        "Baldur",
+        "Fabian"
+      ]
+    },
+    {
+      "day": 220,
+      "category": "fireCrystal",
+      "label": "War Academy and FC Lab 5"
+    },
+    {
+      "day": 230,
+      "category": "experts",
+      "label": "Experts",
+      "names": [
+        "Kathy",
+        "Ronne"
+      ]
+    },
+    {
+      "day": 270,
+      "category": "heroes",
+      "label": "Generation 5 heroes",
+      "heroes": [
+        {
+          "name": "Hector",
+          "class": "Infantry"
+        },
+        {
+          "name": "Norah",
+          "class": "Lancer"
+        },
+        {
+          "name": "Gwen",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 280,
+      "category": "pets",
+      "label": "Pet generations 6–7",
+      "pets": [
+        "Iron Rhino",
+        "Saber-tooth Tiger"
+      ]
+    },
+    {
+      "day": 315,
+      "category": "fireCrystal",
+      "label": "Furnace FC8, FC Lab 6, daily mission grants 20 Fire Crystals"
+    },
+    {
+      "day": 360,
+      "category": "heroes",
+      "label": "Generation 6 heroes",
+      "heroes": [
+        {
+          "name": "Wu Ming",
+          "class": "Infantry"
+        },
+        {
+          "name": "Renee",
+          "class": "Lancer"
+        },
+        {
+          "name": "Wayne",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 370,
+      "category": "pets",
+      "label": "Pet generations 8–9",
+      "pets": [
+        "Frost Gorilla",
+        "Mammoth"
+      ]
+    },
+    {
+      "day": 440,
+      "category": "heroes",
+      "label": "Generation 7 heroes",
+      "heroes": [
+        {
+          "name": "Edith",
+          "class": "Infantry"
+        },
+        {
+          "name": "Gordon",
+          "class": "Lancer"
+        },
+        {
+          "name": "Bradley",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 450,
+      "category": "pets",
+      "label": "Pet generation 10",
+      "pets": [
+        "Frostscale Chameleon"
+      ]
+    },
+    {
+      "day": 500,
+      "category": "fireCrystal",
+      "label": "Furnace FC10"
+    },
+    {
+      "day": 520,
+      "category": "heroes",
+      "label": "Generation 8 heroes",
+      "heroes": [
+        {
+          "name": "Gatot",
+          "class": "Infantry"
+        },
+        {
+          "name": "Sonya",
+          "class": "Lancer"
+        },
+        {
+          "name": "Hendrik",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 600,
+      "category": "heroes",
+      "label": "Generation 9 heroes",
+      "heroes": [
+        {
+          "name": "Magnus",
+          "class": "Infantry"
+        },
+        {
+          "name": "Fred",
+          "class": "Lancer"
+        },
+        {
+          "name": "Xura",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 680,
+      "category": "heroes",
+      "label": "Generation 10 heroes; T12 troops arrive",
+      "heroes": [
+        {
+          "name": "Gregory",
+          "class": "Infantry"
+        },
+        {
+          "name": "Freya",
+          "class": "Lancer"
+        },
+        {
+          "name": "Blanchette",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 760,
+      "category": "heroes",
+      "label": "Generation 11 heroes",
+      "heroes": [
+        {
+          "name": "Eleonora",
+          "class": "Infantry"
+        },
+        {
+          "name": "Lloyd",
+          "class": "Lancer"
+        },
+        {
+          "name": "Rufus",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 840,
+      "category": "heroes",
+      "label": "Generation 12 heroes",
+      "heroes": [
+        {
+          "name": "Hervor",
+          "class": "Infantry"
+        },
+        {
+          "name": "Karol",
+          "class": "Lancer"
+        },
+        {
+          "name": "Ligeia",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 920,
+      "category": "heroes",
+      "label": "Generation 13 heroes",
+      "heroes": [
+        {
+          "name": "Gisela",
+          "class": "Infantry"
+        },
+        {
+          "name": "Flora",
+          "class": "Lancer"
+        },
+        {
+          "name": "Vulcanus",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 1000,
+      "category": "heroes",
+      "label": "Generation 14 heroes",
+      "heroes": [
+        {
+          "name": "Elif",
+          "class": "Infantry"
+        },
+        {
+          "name": "Dominic",
+          "class": "Lancer"
+        },
+        {
+          "name": "Cara",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 1080,
+      "category": "heroes",
+      "label": "Generation 15 heroes",
+      "heroes": [
+        {
+          "name": "Hank",
+          "class": "Infantry"
+        },
+        {
+          "name": "Estrella",
+          "class": "Lancer"
+        },
+        {
+          "name": "Viveca",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 1160,
+      "category": "heroes",
+      "label": "Generation 16 heroes",
+      "heroes": [
+        {
+          "name": "Seigel",
+          "class": "Infantry"
+        },
+        {
+          "name": "Ursar",
+          "class": "Lancer"
+        },
+        {
+          "name": "Aisling",
+          "class": "Marksman"
+        }
+      ]
+    },
+    {
+      "day": 1240,
+      "category": "heroes",
+      "label": "Generation 17 heroes",
+      "heroes": [
+        {
+          "name": "Aiden",
+          "class": "Infantry"
+        },
+        {
+          "name": "Bertha",
+          "class": "Lancer"
+        },
+        {
+          "name": "Eleanor",
+          "class": "Marksman"
+        }
+      ],
+      "estimated": true
+    }
+  ]
+}
