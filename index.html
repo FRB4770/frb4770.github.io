@@ -786,6 +786,12 @@ header nav #gtranslate_wrapper .gt_selector,header nav #gtranslate_wrapper selec
 <style id="nyx-mobile-title-badge-clearance">
 @media(max-width:600px){#home .nyx-frostfire-copy{height:auto!important;padding-top:46px!important}#home .nyx-updates-copy{padding-top:46px!important}#home .nyx-frostfire-copy h3,#home .nyx-updates-copy h3{max-width:100%!important;padding-right:0!important}#home .nyx-updates-card .nyx-ty-tales-heading{top:12px!important;left:92px!important}}
 </style>
+<style id="mobile-phone-layout-clarity">
+@media (max-width:600px) {
+  #featured { grid-template-columns: minmax(0, 1fr) !important; }
+  #featured > .card { min-width: 0; }
+}
+</style>
 </head>
 <body>
 <header><nav>
@@ -1953,23 +1959,3 @@ header .brand-sub,.brand-sub{
  start.addEventListener('change',()=>{const d=currentDay(),i=events.findIndex(e=>e.day>=d);selected=i<0?events.length-1:Math.max(0,i);paint()});paint();setTimeout(()=>{const active=track.querySelector('[aria-pressed="true"]');if(active)active.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'})},120);
 })();
 </script><script src="assets/whiteout-watch.js"></script><script src="assets/frb-mini-games.js"></script><script src="assets/commander-frb.js"></script><script src="assets/dreamscape-trainer.js"></script><script src="assets/marvelous-fantasia.js"></script></body></html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
